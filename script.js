@@ -19,5 +19,5 @@ function changeBackgroundImage() {
     });
 }
 
-// Change the background image every 3 seconds
-setInterval(changeBackgroundImage, 3000);
+// Change the background image every 4 seconds
+setInterval(changeBackgroundImage, 4000);
