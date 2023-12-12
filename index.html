@@ -26,7 +26,6 @@
     <header>
       <nav>
         <ul>
-          <button><image width="40px" src="./pics/logow.png" onclick="window.location.href = 'about/index.html'">About</button>
           <li><a class="link-bio" href="#bio" @click="bg = 'bio'">Seed</a></li>
           <li><a class="link-projects" href="#projects" @click="bg = 'projects'">Bud</a></li>
           <li><a class="link-find-me" href="#findme" @click="bg = 'find-me'">Bloom</a></li>
@@ -50,6 +49,18 @@
     </main>
   </div>
 </div>
+<div style="z-index:999; position: absolute; bottom: 20px; display: flex; justify-content: center;position: absolute;left: 50%;transform: translate(-50%, 0);">
+  <button onclick="window.location.href = 'about/index.html'">
+    <image width="80px" src="./pics/logow.png">
+    <font style="font-size: 50;font-family:'Euphoria Script';">About Us</font>
+  </button>
+  <button onclick="window.location.href = 'about/index.html'">
+    <image width="80px" src="./pics/logow.png">
+    <font style="font-size: 50;font-family:'Euphoria Script';">Book Now</font>
+  </button>
+</div>
+
+
 <!-- partial -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.min.js'></script><script  src="./script.js"></script>
 

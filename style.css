@@ -1,6 +1,6 @@
 :root {
   --purple-brown: #231f20;
-  --egg-shell: #e8e4d2;
+  --egg-shell: #e8e8d8;
   --dark-peach: #054950;
   --border-width: .75rem;
   --dots-gap: 10px;
@@ -301,14 +301,14 @@ main {
 }
 button {
   background-color: transparent;
-  border: 3px solid var(--egg-shell);
+  border: 3px solid white;
   padding: 4px 20px;
   color: #000; /* Change this to your desired text color */
   cursor: pointer;
   transition: background 0.2s ease;
   font-family: Trocchi, Georgia, serif;
   font-size: .7em;
-  color: var(--egg-shell);
+  color: white;
 }
 
 button:hover {
