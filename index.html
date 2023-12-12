@@ -14,61 +14,42 @@
               <link rel="icon" type="image/png" href="pics/logo.png" sizes="16x16">
               <link rel="mask-icon" href="pics/logo.png" color="#fff">
               <link rel="shortcut icon" href="pics/logo.png">
-  <link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/css?family=Trocchi|Anton" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel="stylesheet" href="./style.css">
 
 </head>
 <body>
 <!-- partial:index.partial.html -->
-<div id="parallax-world-of-ugg">
-
-<section>
-  <div class="title">
-    <h3>Beyond Labels, Beyond Limits</h3>
-    <h1>Bramble Twist</h1>
+<div id="app">
+  <div :class="['bg', bg]">
+    <header>
+      <nav>
+        <ul>
+          <button><image width="40px" src="./pics/logow.png" onclick="window.location.href = 'about/index.html'">About</button>
+          <li><a class="link-bio" href="#bio" @click="bg = 'bio'">Seed</a></li>
+          <li><a class="link-projects" href="#projects" @click="bg = 'projects'">Bud</a></li>
+          <li><a class="link-find-me" href="#findme" @click="bg = 'find-me'">Bloom</a></li>
+        </ul>
+      </nav>
+      <div class="transition transition-bio"></div>
+      <div class="transition transition-projects"></div>
+      <div class="transition transition-find-me"></div>
+      <h1>Bramble Twist</h1>
+    </header>
+    <div class="dots dots1"></div>
+    <div class="dots dots2"></div>
+    <main>
+      <transition name="slide-fade" mode="out-in">
+        <p key="bio" v-if="bg==='bio'">Our mission is to provide a welcoming space for you to embrace natural wellness in a sustainable way.</p>
+        <p key="projects" v-if="bg==='projects'">We specialize in hair health, loc establishment, maintenance, and creating unique styling for all hair types and textures.</p>
+        <p key="find-me" v-if="bg==='find-me'">Come relax in our accessory design lounge, complete with snacks and entertainment.</p>
+      </transition>
+    </main>
   </div>
-</section>
-
-<section>
-    <div class="parallax-one">
-      <h2>Inclusive Haven</h2>
-    </div>
-</section>
-
-<section>
-  <div class="block">
-    <p><span class="first-character sc">W</span>e offer sustainable hair care services and custom 3D printed accessories.<br>
-       Our mission is to provide an inclusive, welcoming space for you to embrace natural beauty in all its glorious diversity</p>
-  </div>
-</section>
-
-<section>
-  <div class="parallax-two">
-    <h2>Hair Empowerments</h2>
-  </div>
-</section>
-
-<section>
-  <div class="block">
-    <p><span class="first-character ny">W</span>e specialize in hair health and wellness and loc  establishment, maintenance, and styling for all hair types and textures.
-       We focus on healthy, nurturing hair care and creating styles that allow your natural beauty to shine through.</p>
-  </div>
-</section>
-
-<section>
-  <div class="parallax-three">
-    <h2>Printed Accessories</h2>
-  </div>
-</section>
-
-<section>
-  <div class="block">
-    <p><span class="first-character atw">O</span>ur technology-powered design lab creates custom 3D printed jewelry, hair accessories, and beauty tools.
-       Work with our creative team or provide your own designs to produce personalized pieces!</p>
-  </div>
-</section>
-
 </div>
 <!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.min.js'></script><script  src="./script.js"></script>
 
 </body>
 </html>
