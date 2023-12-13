@@ -5,3 +5,7 @@ new Vue({
       bg: 'bio' };
 
   } });
+
+  function scrollDown() {
+    window.scrollBy(0, 600);
+  }

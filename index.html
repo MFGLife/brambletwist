@@ -17,7 +17,24 @@
 <link href='https://fonts.googleapis.com/css?family=Euphoria%20Script' rel='stylesheet'>
 <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 <link rel="stylesheet" href="./style.css">
+<style>
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      margin: 0 auto;
+    }
 
+    .photo {
+      width: 33.33%;
+      margin: 10px;
+      box-shadow: 0 0 5px #ddd;
+    }
+
+    .photo img {
+      width: 100%;
+    }
+  </style>
 </head>
 <body>
 <!-- partial:index.partial.html -->
@@ -42,21 +59,124 @@
     <div class="dots dots2"></div>
     <main>
       <transition name="slide-fade" mode="out-in">
-        <p key="bio" v-if="bg==='bio'">
-          <button onclick="window.location.href = 'about/index.html'">
+        <p   key="bio" v-if="bg==='bio'">
+          <button  style="width:80%;" onclick="window.location.href = 'about/index.html'">
             <font style="font-size: 40;font-family:'Euphoria Script';">View our welcoming space for you to embrace natural wellness in a sustainable way.</font>
               <image height="40px" src="./pics/logow.png">
           </button>
+          <a style="top: 0px; right: 5%; position:absolute;" onclick="scrollDown();" ><svg height="90px" width="90px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+ viewBox="0 0 512.035 512.035" xml:space="preserve" >
+<g transform="translate(0, -180px)">
+<polygon style="fill:#054950;" points="152.617,169.701 255.017,263.568 357.417,169.701 357.417,33.168 255.017,135.568
+  152.617,33.168 	"/>
+<polyline style="fill:#231f20;" points="357.417,33.168 357.417,167.995 383.017,144.101 383.017,7.568 	"/>
+<polygon style="fill:#FFFFFF;" points="152.617,167.995 152.617,33.168 127.017,7.568 127.017,144.101 	"/>
+<polygon style="fill:darkred;" points="152.617,408.635 255.017,502.501 357.417,408.635 357.417,272.101 255.017,374.501
+  152.617,272.101 	"/>
+<polyline style="fill:#231f20;" points="357.417,272.101 357.417,406.928 383.017,383.035 383.017,246.501 	"/>
+<polygon style="fill:#FFFFFF;" points="152.617,406.928 152.617,272.101 127.017,246.501 127.017,383.035 	"/>
+<path d="M255.017,272.101c-1.707,0-4.267-0.853-5.973-2.56l-128-119.467c-1.707-1.707-2.56-3.413-2.56-5.973V7.568
+  c0-3.413,1.707-6.827,5.12-7.68c3.413-1.707,6.827-0.853,9.387,1.707l122.027,122.027L377.044,1.595
+  c2.56-2.56,5.973-3.413,9.387-1.707s5.12,4.267,5.12,7.68v136.533c0,2.56-0.853,4.267-2.56,5.973l-42.667,40.107
+  c-3.413,3.413-8.533,3.413-11.947,0s-3.413-8.533,0-11.947l40.107-37.547V28.048L260.991,141.541
+  c-3.413,3.413-8.533,3.413-11.947,0L135.551,28.048v112.64l119.467,111.787l30.72-29.013c3.413-3.413,8.533-3.413,11.947,0
+  s3.413,8.533,0,11.947l-36.693,34.133C259.284,271.248,256.724,272.101,255.017,272.101z"/>
+<path d="M308.777,208.101c0,5.12,3.413,8.533,8.533,8.533c5.12,0,8.533-3.413,8.533-8.533c0-5.12-3.413-8.533-8.533-8.533
+  C312.191,199.568,308.777,202.981,308.777,208.101"/>
+<path d="M255.017,511.035c-1.707,0-4.267-0.853-5.973-2.56l-128-119.467c-1.707-1.707-2.56-3.413-2.56-5.973V246.501
+  c0-3.413,1.707-6.827,5.12-7.68c3.413-0.853,6.827-0.853,9.387,1.707l122.027,122.027l122.027-122.027
+  c2.56-2.56,5.973-3.413,9.387-1.707c3.413,1.707,5.12,4.267,5.12,7.68v136.533c0,2.56-0.853,4.267-2.56,5.973l-128,119.467
+  C259.284,510.181,256.724,511.035,255.017,511.035z M135.551,379.621l119.467,111.787l119.467-111.787v-112.64L260.991,380.475
+  c-3.413,3.413-8.533,3.413-11.947,0L135.551,266.981V379.621z"/>
+</g>
+</svg></a><font style="font-family:'Suranna Script'"><br><br>
+
+<br><br><br><br>
+<iframe src="https://the-profane.com/" frameborder="0" scrolling="no" style="z-index:999999999999; width: 100%; height: 1500px;"></iframe>
+
+
+
         </p>
-        <p key="projects" v-if="bg==='projects'">
-          <button onclick="window.location.href = 'about/index.html'">
+        <p   key="projects" v-if="bg==='projects'">
+          <button onclick="window.location.href = 'about/index.html'" style="width:80%;">
             <font style="font-size: 40; color: black;font-family:'Euphoria Script';">View our unique styles which specialize in hair health, loc establishment, amd maintenance.</font>
           </button>
+            <a style="top: 0px; right: 5%; position:absolute;" onclick="scrollDown();" ><svg height="90px" width="90px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	 viewBox="0 0 512.035 512.035" xml:space="preserve" >
+<g transform="translate(0, -180px)">
+	<polygon style="fill:#054950;" points="152.617,169.701 255.017,263.568 357.417,169.701 357.417,33.168 255.017,135.568
+		152.617,33.168 	"/>
+	<polyline style="fill:#231f20;" points="357.417,33.168 357.417,167.995 383.017,144.101 383.017,7.568 	"/>
+	<polygon style="fill:#FFFFFF;" points="152.617,167.995 152.617,33.168 127.017,7.568 127.017,144.101 	"/>
+	<polygon style="fill:darkred;" points="152.617,408.635 255.017,502.501 357.417,408.635 357.417,272.101 255.017,374.501
+		152.617,272.101 	"/>
+	<polyline style="fill:#231f20;" points="357.417,272.101 357.417,406.928 383.017,383.035 383.017,246.501 	"/>
+	<polygon style="fill:#FFFFFF;" points="152.617,406.928 152.617,272.101 127.017,246.501 127.017,383.035 	"/>
+	<path d="M255.017,272.101c-1.707,0-4.267-0.853-5.973-2.56l-128-119.467c-1.707-1.707-2.56-3.413-2.56-5.973V7.568
+		c0-3.413,1.707-6.827,5.12-7.68c3.413-1.707,6.827-0.853,9.387,1.707l122.027,122.027L377.044,1.595
+		c2.56-2.56,5.973-3.413,9.387-1.707s5.12,4.267,5.12,7.68v136.533c0,2.56-0.853,4.267-2.56,5.973l-42.667,40.107
+		c-3.413,3.413-8.533,3.413-11.947,0s-3.413-8.533,0-11.947l40.107-37.547V28.048L260.991,141.541
+		c-3.413,3.413-8.533,3.413-11.947,0L135.551,28.048v112.64l119.467,111.787l30.72-29.013c3.413-3.413,8.533-3.413,11.947,0
+		s3.413,8.533,0,11.947l-36.693,34.133C259.284,271.248,256.724,272.101,255.017,272.101z"/>
+	<path d="M308.777,208.101c0,5.12,3.413,8.533,8.533,8.533c5.12,0,8.533-3.413,8.533-8.533c0-5.12-3.413-8.533-8.533-8.533
+		C312.191,199.568,308.777,202.981,308.777,208.101"/>
+	<path d="M255.017,511.035c-1.707,0-4.267-0.853-5.973-2.56l-128-119.467c-1.707-1.707-2.56-3.413-2.56-5.973V246.501
+		c0-3.413,1.707-6.827,5.12-7.68c3.413-0.853,6.827-0.853,9.387,1.707l122.027,122.027l122.027-122.027
+		c2.56-2.56,5.973-3.413,9.387-1.707c3.413,1.707,5.12,4.267,5.12,7.68v136.533c0,2.56-0.853,4.267-2.56,5.973l-128,119.467
+		C259.284,510.181,256.724,511.035,255.017,511.035z M135.551,379.621l119.467,111.787l119.467-111.787v-112.64L260.991,380.475
+		c-3.413,3.413-8.533,3.413-11.947,0L135.551,266.981V379.621z"/>
+</g>
+</svg></a><font style="font-family:'Suranna Script'"><br><br>
+Everbloom Renewal - Restores hairs' natural vibrancy through deep cleansing and standard conditioning.
+<br><br>
+Everbloom Infusion - Replenishes parched strands with indulgent deep clean and hydrating hot oil condition.
+<br><br>
+Everbloom Repose- Mindfully detangles hair from any state to achieve renewed balance and harmony.
+<br><br>
+Bloom Harvest - Reinvigorates fresh growth and refortifies form through meticulous maintenance care for locked hair.
+<br><br>
+The Bramble Twist- Lavishes strands with regal ornamentation sculpted into stunning styles.
+<br><br>
+The Bramble - Begin your loc journey with intuitive detangling, careful sectioning, and starter loc cultivation.
+</font>
         </p>
-        <p key="find-me" v-if="bg==='find-me'">
-          <button onclick="window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSdl0dy4U_kAXXg0PWmhgGfylccTYeV-hE9yv9lyyenRm2u_AA/viewform?usp=sf_link'">
+        <p   key="find-me" v-if="bg==='find-me'">
+          <button  style="width:80%;" onclick="window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSdl0dy4U_kAXXg0PWmhgGfylccTYeV-hE9yv9lyyenRm2u_AA/viewform?usp=sf_link'">
             <font style="font-size: 60;font-family:'Euphoria Script';">Book Now</font><font style="font-size: 40;color: darkred;font-family:'Euphoria Script';"> and relax in our accessory design lounge, complete with snacks and entertainment.</font>
           </button>
+          <a style="top: 0px; right: 5%; position:absolute;" onclick="scrollDown();" ><svg height="90px" width="90px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+ viewBox="0 0 512.035 512.035" xml:space="preserve" >
+<g transform="translate(0, -180px)">
+<polygon style="fill:#054950;" points="152.617,169.701 255.017,263.568 357.417,169.701 357.417,33.168 255.017,135.568
+  152.617,33.168 	"/>
+<polyline style="fill:#231f20;" points="357.417,33.168 357.417,167.995 383.017,144.101 383.017,7.568 	"/>
+<polygon style="fill:#FFFFFF;" points="152.617,167.995 152.617,33.168 127.017,7.568 127.017,144.101 	"/>
+<polygon style="fill:darkred;" points="152.617,408.635 255.017,502.501 357.417,408.635 357.417,272.101 255.017,374.501
+  152.617,272.101 	"/>
+<polyline style="fill:#231f20;" points="357.417,272.101 357.417,406.928 383.017,383.035 383.017,246.501 	"/>
+<polygon style="fill:#FFFFFF;" points="152.617,406.928 152.617,272.101 127.017,246.501 127.017,383.035 	"/>
+<path d="M255.017,272.101c-1.707,0-4.267-0.853-5.973-2.56l-128-119.467c-1.707-1.707-2.56-3.413-2.56-5.973V7.568
+  c0-3.413,1.707-6.827,5.12-7.68c3.413-1.707,6.827-0.853,9.387,1.707l122.027,122.027L377.044,1.595
+  c2.56-2.56,5.973-3.413,9.387-1.707s5.12,4.267,5.12,7.68v136.533c0,2.56-0.853,4.267-2.56,5.973l-42.667,40.107
+  c-3.413,3.413-8.533,3.413-11.947,0s-3.413-8.533,0-11.947l40.107-37.547V28.048L260.991,141.541
+  c-3.413,3.413-8.533,3.413-11.947,0L135.551,28.048v112.64l119.467,111.787l30.72-29.013c3.413-3.413,8.533-3.413,11.947,0
+  s3.413,8.533,0,11.947l-36.693,34.133C259.284,271.248,256.724,272.101,255.017,272.101z"/>
+<path d="M308.777,208.101c0,5.12,3.413,8.533,8.533,8.533c5.12,0,8.533-3.413,8.533-8.533c0-5.12-3.413-8.533-8.533-8.533
+  C312.191,199.568,308.777,202.981,308.777,208.101"/>
+<path d="M255.017,511.035c-1.707,0-4.267-0.853-5.973-2.56l-128-119.467c-1.707-1.707-2.56-3.413-2.56-5.973V246.501
+  c0-3.413,1.707-6.827,5.12-7.68c3.413-0.853,6.827-0.853,9.387,1.707l122.027,122.027l122.027-122.027
+  c2.56-2.56,5.973-3.413,9.387-1.707c3.413,1.707,5.12,4.267,5.12,7.68v136.533c0,2.56-0.853,4.267-2.56,5.973l-128,119.467
+  C259.284,510.181,256.724,511.035,255.017,511.035z M135.551,379.621l119.467,111.787l119.467-111.787v-112.64L260.991,380.475
+  c-3.413,3.413-8.533,3.413-11.947,0L135.551,266.981V379.621z"/>
+</g>
+</svg></a><font style="font-family:'Suranna Script'"><br><br>
+
+Foretellings - our consultations - hold profound value for those embracing their self-care journey. More than a quick guidance chat, these empowering conversations focus on your unique hair journey, how Bramble Twist’s trend-setting options can embolden that journey, and unlocking your crown’s full potential. Through collaborative vision-building and knowledge sharing, the consultant helps craft a custom care blueprint that aligns with your hair type, way of life, and greater aspirations.
+<br><br>
+Bramble Twist’s experience aims to uplift newcomers and seasoned pros alike to build confidence, comfort, and trust in the collaborative relationship between you, the journeyer, and us as guides. Skilled journey guides recognize all hair care - and especially loc initiation - signifies a defining passage in one's self-realization. They contribute accumulated insights that educate and enrich seeker readiness. By honoring the traveler’s one-of-a-kind journey, consultations ignite assurance and possibility.
+<br><br>
+The insight exchanges that define quality consultations enlighten consultants and seekers alike. Journeyers gain confidence through transparent guidance on best practices while consultants better grasp unique seeker visions and sensibilities. Ultimately, the experience bonds through mutually understood intentions and aligned outlooks. Consultations never carry obligations beyond the present and instead focus on addressing questions and concerns while providing a compassionate, informed knowledge and guidance through a journeyer’s self-care adventure.
+</font>
         </p>
       </transition>
     </main>
