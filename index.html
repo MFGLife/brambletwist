@@ -42,22 +42,27 @@
     <div class="dots dots2"></div>
     <main>
       <transition name="slide-fade" mode="out-in">
-        <p key="bio" v-if="bg==='bio'">Our mission is to provide a welcoming space for you to embrace natural wellness in a sustainable way.</p>
-        <p key="projects" v-if="bg==='projects'">We specialize in hair health, loc establishment, maintenance, and creating unique styling for all hair types and textures.</p>
-        <p key="find-me" v-if="bg==='find-me'">Come relax in our accessory design lounge, complete with snacks and entertainment.</p>
+        <p key="bio" v-if="bg==='bio'">
+          <button onclick="window.location.href = 'about/index.html'">
+            <font style="font-size: 40;font-family:'Euphoria Script';">View our welcoming space for you to embrace natural wellness in a sustainable way.</font>
+              <image height="40px" src="./pics/logow.png">
+          </button>
+        </p>
+        <p key="projects" v-if="bg==='projects'">
+          <button onclick="window.location.href = 'about/index.html'">
+            <font style="font-size: 40; color: black;font-family:'Euphoria Script';">View our unique styles which specialize in hair health, loc establishment, amd maintenance.</font>
+          </button>
+        </p>
+        <p key="find-me" v-if="bg==='find-me'">
+          <button onclick="window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSdl0dy4U_kAXXg0PWmhgGfylccTYeV-hE9yv9lyyenRm2u_AA/viewform?usp=sf_link'">
+            <font style="font-size: 60;font-family:'Euphoria Script';">Book Now</font><font style="font-size: 40;color: darkred;font-family:'Euphoria Script';"> and relax in our accessory design lounge, complete with snacks and entertainment.</font>
+          </button>
+        </p>
       </transition>
     </main>
   </div>
 </div>
-<div style="z-index:999; position: absolute; bottom: 20px; display: flex; justify-content: center;position: absolute;left: 50%;transform: translate(-50%, 0);">
-  <button onclick="window.location.href = 'about/index.html'">
-    <font style="font-size: 50;font-family:'Euphoria Script';">About</font>
-      <image height="40px" src="./pics/logow.png">
-  </button>
-  <button onclick="window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSdl0dy4U_kAXXg0PWmhgGfylccTYeV-hE9yv9lyyenRm2u_AA/viewform?usp=sf_link'">
-    <font style="font-size: 50;font-family:'Euphoria Script';">Book Now</font>
-  </button>
-</div>
+
 
 
 <!-- partial -->

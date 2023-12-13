@@ -254,6 +254,7 @@ nav {
   position: fixed;
   top: var(--border-width);
   left: var(--border-width);
+width: 99%;
   z-index: 10;
 }
 nav ul {
@@ -273,7 +274,7 @@ nav a {
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-size: 0.875rem;
+  font-size: 1.875rem;
 }
 nav .link-projects {
   color: var(--purple-brown);
