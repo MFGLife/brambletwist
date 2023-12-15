@@ -7,5 +7,5 @@ new Vue({
   } });
 
   function scrollDown() {
-    window.scrollBy(0, 600);
+    window.scrollBy(0, 1000);
   }

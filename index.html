@@ -43,9 +43,10 @@
     <header>
       <nav>
         <ul>
-          <li><a class="link-bio" href="#bio" @click="bg = 'bio'">Seed</a></li>
-          <li><a class="link-projects" href="#projects" @click="bg = 'projects'">Bud</a></li>
-          <li><a class="link-find-me" href="#findme" @click="bg = 'find-me'">Bloom</a></li>
+          <li><a class="link-bio" href="#bio" @click="bg = 'bio'"><image height="64px" src="./pics/logow.png"></a></li>
+          <li><a class="link-projects" href="#projects" @click="bg = 'projects'">🌱</a></li>
+          <li><a class="link-find-me" href="#findme" @click="bg = 'find-me'">🌿</a></li>
+          <li><a class="link-specials" href="#specials" @click="bg = 'specials'">🌼</a></li>
         </ul>
       </nav>
       <div class="transition transition-bio"></div>
@@ -59,44 +60,28 @@
     <div class="dots dots2"></div>
     <main>
       <transition name="slide-fade" mode="out-in">
+
+
+
+
+
         <p   key="bio" v-if="bg==='bio'">
-          <button  style="width:80%;" onclick="window.location.href = 'about/index.html'">
-            <font style="font-size: 40;font-family:'Euphoria Script';">View our welcoming space for you to embrace natural wellness in a sustainable way.</font>
-              <image height="40px" src="./pics/logow.png">
+          <button onclick="location.href='sms:+17852149030'" style="width:100%;">
+            <font style="font-size: 60; color: white;font-family:'Euphoria Script';">Text 785.214.9030</font>
+          </button><br><br>
+          <button onclick="window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSdl0dy4U_kAXXg0PWmhgGfylccTYeV-hE9yv9lyyenRm2u_AA/viewform?usp=sf_link'" style="width:100%;">
+            <font style="font-size: 60; color: white;font-family:'Euphoria Script';">Get scheduled</font>
           </button>
-          <a style="top: 0px; right: 5%; position:absolute;" onclick="scrollDown();" ><svg height="90px" width="90px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
- viewBox="0 0 512.035 512.035" xml:space="preserve" >
-<g transform="translate(0, -180px)">
-<polygon style="fill:#054950;" points="152.617,169.701 255.017,263.568 357.417,169.701 357.417,33.168 255.017,135.568
-  152.617,33.168 	"/>
-<polyline style="fill:#231f20;" points="357.417,33.168 357.417,167.995 383.017,144.101 383.017,7.568 	"/>
-<polygon style="fill:#FFFFFF;" points="152.617,167.995 152.617,33.168 127.017,7.568 127.017,144.101 	"/>
-<polygon style="fill:darkred;" points="152.617,408.635 255.017,502.501 357.417,408.635 357.417,272.101 255.017,374.501
-  152.617,272.101 	"/>
-<polyline style="fill:#231f20;" points="357.417,272.101 357.417,406.928 383.017,383.035 383.017,246.501 	"/>
-<polygon style="fill:#FFFFFF;" points="152.617,406.928 152.617,272.101 127.017,246.501 127.017,383.035 	"/>
-<path d="M255.017,272.101c-1.707,0-4.267-0.853-5.973-2.56l-128-119.467c-1.707-1.707-2.56-3.413-2.56-5.973V7.568
-  c0-3.413,1.707-6.827,5.12-7.68c3.413-1.707,6.827-0.853,9.387,1.707l122.027,122.027L377.044,1.595
-  c2.56-2.56,5.973-3.413,9.387-1.707s5.12,4.267,5.12,7.68v136.533c0,2.56-0.853,4.267-2.56,5.973l-42.667,40.107
-  c-3.413,3.413-8.533,3.413-11.947,0s-3.413-8.533,0-11.947l40.107-37.547V28.048L260.991,141.541
-  c-3.413,3.413-8.533,3.413-11.947,0L135.551,28.048v112.64l119.467,111.787l30.72-29.013c3.413-3.413,8.533-3.413,11.947,0
-  s3.413,8.533,0,11.947l-36.693,34.133C259.284,271.248,256.724,272.101,255.017,272.101z"/>
-<path d="M308.777,208.101c0,5.12,3.413,8.533,8.533,8.533c5.12,0,8.533-3.413,8.533-8.533c0-5.12-3.413-8.533-8.533-8.533
-  C312.191,199.568,308.777,202.981,308.777,208.101"/>
-<path d="M255.017,511.035c-1.707,0-4.267-0.853-5.973-2.56l-128-119.467c-1.707-1.707-2.56-3.413-2.56-5.973V246.501
-  c0-3.413,1.707-6.827,5.12-7.68c3.413-0.853,6.827-0.853,9.387,1.707l122.027,122.027l122.027-122.027
-  c2.56-2.56,5.973-3.413,9.387-1.707c3.413,1.707,5.12,4.267,5.12,7.68v136.533c0,2.56-0.853,4.267-2.56,5.973l-128,119.467
-  C259.284,510.181,256.724,511.035,255.017,511.035z M135.551,379.621l119.467,111.787l119.467-111.787v-112.64L260.991,380.475
-  c-3.413,3.413-8.533,3.413-11.947,0L135.551,266.981V379.621z"/>
-</g>
-</svg></a><font style="font-family:'Suranna Script'"><br><br>
-
-<br><br><br><br>
-<iframe src="gallery.html" frameborder="0" scrolling="no" style="z-index:999999999999; width: 100%; height: 1500px;"></iframe>
-
-
-
         </p>
+
+
+
+
+
+
+
+
+
         <p   key="projects" v-if="bg==='projects'">
           <button onclick="window.location.href = 'about/index.html'" style="width:80%;">
             <font style="font-size: 40; color: black;font-family:'Euphoria Script';">View our unique styles which specialize in hair health, loc establishment, amd maintenance.</font>
@@ -178,6 +163,61 @@ Bramble Twist’s experience aims to uplift newcomers and seasoned pros alike to
 The insight exchanges that define quality consultations enlighten consultants and seekers alike. Journeyers gain confidence through transparent guidance on best practices while consultants better grasp unique seeker visions and sensibilities. Ultimately, the experience bonds through mutually understood intentions and aligned outlooks. Consultations never carry obligations beyond the present and instead focus on addressing questions and concerns while providing a compassionate, informed knowledge and guidance through a journeyer’s self-care adventure.
 </font>
         </p>
+
+
+
+
+        <p   key="specials" v-if="bg==='specials'">
+            <a style="top: 0px; right: 5%; position:absolute;" onclick="scrollDown();" ><svg height="90px" width="90px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 0 512.035 512.035" xml:space="preserve" >
+        <g transform="translate(0, -180px)">
+        <polygon style="fill:#054950;" points="152.617,169.701 255.017,263.568 357.417,169.701 357.417,33.168 255.017,135.568
+        152.617,33.168 	"/>
+        <polyline style="fill:#231f20;" points="357.417,33.168 357.417,167.995 383.017,144.101 383.017,7.568 	"/>
+        <polygon style="fill:#FFFFFF;" points="152.617,167.995 152.617,33.168 127.017,7.568 127.017,144.101 	"/>
+        <polygon style="fill:darkred;" points="152.617,408.635 255.017,502.501 357.417,408.635 357.417,272.101 255.017,374.501
+        152.617,272.101 	"/>
+        <polyline style="fill:#231f20;" points="357.417,272.101 357.417,406.928 383.017,383.035 383.017,246.501 	"/>
+        <polygon style="fill:#FFFFFF;" points="152.617,406.928 152.617,272.101 127.017,246.501 127.017,383.035 	"/>
+        <path d="M255.017,272.101c-1.707,0-4.267-0.853-5.973-2.56l-128-119.467c-1.707-1.707-2.56-3.413-2.56-5.973V7.568
+        c0-3.413,1.707-6.827,5.12-7.68c3.413-1.707,6.827-0.853,9.387,1.707l122.027,122.027L377.044,1.595
+        c2.56-2.56,5.973-3.413,9.387-1.707s5.12,4.267,5.12,7.68v136.533c0,2.56-0.853,4.267-2.56,5.973l-42.667,40.107
+        c-3.413,3.413-8.533,3.413-11.947,0s-3.413-8.533,0-11.947l40.107-37.547V28.048L260.991,141.541
+        c-3.413,3.413-8.533,3.413-11.947,0L135.551,28.048v112.64l119.467,111.787l30.72-29.013c3.413-3.413,8.533-3.413,11.947,0
+        s3.413,8.533,0,11.947l-36.693,34.133C259.284,271.248,256.724,272.101,255.017,272.101z"/>
+        <path d="M308.777,208.101c0,5.12,3.413,8.533,8.533,8.533c5.12,0,8.533-3.413,8.533-8.533c0-5.12-3.413-8.533-8.533-8.533
+        C312.191,199.568,308.777,202.981,308.777,208.101"/>
+        <path d="M255.017,511.035c-1.707,0-4.267-0.853-5.973-2.56l-128-119.467c-1.707-1.707-2.56-3.413-2.56-5.973V246.501
+        c0-3.413,1.707-6.827,5.12-7.68c3.413-0.853,6.827-0.853,9.387,1.707l122.027,122.027l122.027-122.027
+        c2.56-2.56,5.973-3.413,9.387-1.707c3.413,1.707,5.12,4.267,5.12,7.68v136.533c0,2.56-0.853,4.267-2.56,5.973l-128,119.467
+        C259.284,510.181,256.724,511.035,255.017,511.035z M135.551,379.621l119.467,111.787l119.467-111.787v-112.64L260.991,380.475
+        c-3.413,3.413-8.533,3.413-11.947,0L135.551,266.981V379.621z"/>
+        </g>
+        </svg></a><font style="font-family:'Suranna Script'"><br><br>
+          🌟 "Introducing the Single loc Special - Your Journey into the World of Locs Begins Here!" 🌟
+          <br><br>
+          🌃 Embrace Your Unique Style in the Heart of Kansas City 🌃
+          <br><br>
+          Simple Elegance: Discover the beauty and simplicity of a single hair loc. A perfect way to express yourself and stand out in KC's vibrant culture.
+          Personalized Experience: Book your "Get to Know Me" session with our expert stylists. We listen, we understand, and we craft the perfect lock to match your individuality.
+          Introductory Special: As a warm welcome to our Kansas City family, we're offering an exclusive deal on your first dreadlock. Experience the blend of tradition and trend with our expert touch.
+          Community Connection: Join the local movement. Be a part of a culture that celebrates uniqueness and personal stories.
+          Crafted with Care: Using only the finest, locally-sourced materials, we ensure your dreadlock is not just a style, but a statement.
+          🎉 Limited Time Offer 🎉: First-time clients receive a special discount and a guided tour of KC's iconic landmarks post-session!
+          <br><br>
+          📍 Find Us in the Heart of Kansas City near Swope Park
+          <br><br>
+          📱 Connect with Us: 785.124.9030
+<br><br>
+          <button  style="width:100%;" onclick="window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSdl0dy4U_kAXXg0PWmhgGfylccTYeV-hE9yv9lyyenRm2u_AA/viewform?usp=sf_link'">
+            <font style="font-size: 60;font-family:'Euphoria Script';">Get to know me</font>
+          </button>
+        </font>
+        </p>
+
+
+
+
       </transition>
     </main>
   </div>
