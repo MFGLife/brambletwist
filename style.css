@@ -62,13 +62,7 @@ a {
   transition: 1s;
 }
 
-.bio{
-  background-image: url('pics/wall1.png');
-  background-repeat: no-repeat; /* Ensures the image doesn't repeat */
-  background-position: center; /* Centers the background image */
-  background-size: cover;
-}
-
+.bio,
 .link-bio {
   background: var(--purple-brown);
 }
@@ -87,14 +81,7 @@ a {
   background: var(--dark-peach);
 }
 
-.specials {
-  background-image: url('pics/wall.png');
-  background-repeat: no-repeat; /* Ensures the image doesn't repeat */
-  background-position: center; /* Centers the background image */
-  background-size: cover;
-}
-
-
+.specials,
 .link-specials {
   background: var(--blood-red);
 }
@@ -116,10 +103,6 @@ a {
 .transition-bio {
   left: 0;
   background: var(--purple-brown);
-  background-image: url('pics/wall1.png');
-  background-repeat: no-repeat; /* Ensures the image doesn't repeat */
-  background-position: center; /* Centers the background image */
-  background-size: cover;
 }
 
 .transition-projects {
@@ -130,10 +113,6 @@ a {
 .transition-find-me {
   left: 15rem;
   background: var(--dark-peach);
-  background-image: url('pics/wall3.png');
-  background-repeat: no-repeat; /* Ensures the image doesn't repeat */
-  background-position: center; /* Centers the background image */
-  background-size: cover;
 }
 
 .transition-specials {
