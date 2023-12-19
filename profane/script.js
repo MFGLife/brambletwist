@@ -27,16 +27,8 @@ function populateGallery(foldersWithCaptions, imageCountPerFolder) {
 
 populateGallery({
   'collective':'Collective',
-  'faxium':'Faxium',
-  'abzimuth':'Abzimuth',
-	'mercado':'Mercado',
-  'ventura':'Ventura',
-  'occidentica':'Occidentica',
-  'eventus':'Eventus',
-  'ironcoast':'Iron Coast',
-  'trantum':'Trantum'
   // ... add other folders and captions as necessary
-}, 10); // Modify the image count as needed
+}, 20); // Modify the image count as needed
 
 
 
