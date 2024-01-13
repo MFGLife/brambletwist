@@ -5,13 +5,16 @@
     <style>
         body { margin: 0; }
         canvas { display: block; background: transparent; } /* Ensure canvas background is transparent */
+        
         #gallery {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 500px;
-    height: 500px;
+    max-width: 500px;
+    max-height: 500px;
+    width: 80vw; /* 80% of the viewport width */
+    height: 80vh; /* 80% of the viewport height */
     overflow: hidden;
 }
 
@@ -19,13 +22,24 @@
     display: none;
     width: 100%;
     height: 100%;
-    font-size: 3em;
+    font-size: 3em; /* Default font size */
 }
 
 .gallery-item:first-child {
     display: block;
 }
 
+/* Media Query for Mobile Devices */
+@media (max-width: 800px) {
+    .gallery-item {
+        font-size: 1.2em; /* Smaller font size for mobile */
+    }
+
+    #gallery {
+        width: 90vw; /* Adjust size for smaller screens */
+        height: 90vh;
+    }
+}
 
 
     </style>
