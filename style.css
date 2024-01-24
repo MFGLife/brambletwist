@@ -172,3 +172,8 @@ path.two {
     }
 }
 
+@media screen and (max-width: 799px) {
+  .google{
+    width: 400px;
+  }
+}
