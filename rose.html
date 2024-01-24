@@ -10,10 +10,9 @@
     position: absolute;
     top: 50%;
     left: 50%;
+    font-family:'Suranna Script';
     transform: translate(-50%, -50%);
-    max-width: 500px;
-    max-height: 500px;
-    width: 80vw; /* 80% of the viewport width */
+    width: 90vw; /* 80% of the viewport width */
     height: 80vh; /* 80% of the viewport height */
     overflow: hidden;
 }
@@ -36,7 +35,7 @@
     }
 
     #gallery {
-        width: 90vw; /* Adjust size for smaller screens */
+        width: 99vw; /* Adjust size for smaller screens */
         height: 90vh;
     }
 }
@@ -48,6 +47,16 @@
 
 
     <div id="gallery">
+        <div class="gallery-item">Let inspiration sprout when you are surrounded by subtle magic in our alcove spaces - schedule a tour now to begin collaborating.</div>
+        <div class="gallery-item">Together we cultivate a nurturing grove where resources are woven so none weather alone.</div>
+        <div class="gallery-item">Inclusivity blooms in our alcove community, where all are welcomed.</div>
+        <div class="gallery-item">ADA accessible oasis with ground-level entry to nurture every spirit.</div>
+        <div class="gallery-item">A family-friendly haven for all ages to find solace and play.</div>
+        <div class="gallery-item">Craft your own enchanted alcove by customizing your workspace as it manifests.</div>
+        <div class="gallery-item">Access the glade from songbird greetings to firefly dances - 8am to 8:30pm daily.</div>
+        <div class="gallery-item">No blood oaths required - easy month to month agreements are preferred.</div>
+        <div class="gallery-item">With two years of nurtured payments, two years will be gifted to harvest freely.*</div>
+        <div class="gallery-item">*Conditions apply, book your tour now to get more details </div>       
         <div class="gallery-item">Discover the essence of nature's tender care with Everbloom, our meticulously crafted rose water mist. Each bottle of Everbloom is a tribute to the pure, unadulterated beauty of nature, embracing the enchanting qualities of our sustainably sourced roses.</div>
         <div class="gallery-item">Our rose water, cherished for its delightful and subtle scent, is an all-natural elixir designed to hydrate and rejuvenate both skin and hair. Encased in elegant, black packaging to protect its integrity from light, Everbloom is a promise of nature's gentle touch in every spritz.</div>
         <div class="gallery-item">Artisanal in its creation, Everbloom is lovingly produced in small batches, ensuring every drop resonates with the quality and care synonymous with our brand. We pride ourselves on our commitment to sustainability, using roses that, though less chosen, are no less cherished, thus reducing waste and honoring the environment.</div>
@@ -154,7 +163,7 @@ setInterval(() => {
     items[current].style.display = 'none';
     current = (current + 1) % totalItems;
     items[current].style.display = 'block';
-}, 5000); // 5000 milliseconds = 5 seconds
+}, 9000); // 5000 milliseconds = 5 seconds
 
 
 

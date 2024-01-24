@@ -1,278 +1,186 @@
+<!DOCTYPE html>
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>Bramble Twist</title>
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-      <meta name="keywords" content="salon, 3d printing, printing, accessories, accessory, hair tools, beauty products, unique gifts, customizable accessories, eco-friendly products, innovative design, high-quality materials, easy to use, durable, affordable, made in the USA, fashion, style">
-      <META NAME="ROBOTS" CONTENT="ALL,FOLLOW">
-          <meta name="description" content="Helping humans become more artificial">
-          <meta name="viewport" content="width=device-width, initial-scale=1">
-          <link rel="apple-touch-icon" sizes="180x180" href="pics/logo.png">
-              <link rel="icon" type="image/png" href="pics/logo.png" sizes="32x32">
-              <link rel="icon" type="image/png" href="pics/logo.png" sizes="16x16">
-              <link rel="mask-icon" href="pics/logo.png" color="#fff">
-              <link rel="shortcut icon" href="pics/logo.png">
-<link href='https://fonts.googleapis.com/css?family=Euphoria%20Script' rel='stylesheet'>
-<meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-<link rel="stylesheet" href="./style.css">
+  <title>BrambleTwist</title>
+  <link rel="stylesheet" href="./style.css">
+
 </head>
 <body>
 <!-- partial:index.partial.html -->
-<div id="app">
-  <div :class="['bg', bg]">
-    <header>
-      <nav>
-        <ul>
-          <li><a class="link-bio" href="#bio" @click="bg = 'bio'"><image height="64px" src="./pics/logow.png"></a></li>
-          <li><a class="link-projects" href="#projects" @click="bg = 'projects'">Elixirs</a></li>
-          <li><a class="link-find-me" href="#findme" @click="bg = 'find-me'">Power</a></li>
-          <li><a class="link-specials" href="#specials" @click="bg = 'specials'">Genesis</a></li>
-        </ul>
-      </nav>
-      <div class="transition transition-bio"></div>
-      <div class="transition transition-projects"></div>
-      <div class="transition transition-find-me"></div>
-
-      <h2>Bramble</h2>
-      <h1>Twist</h1>
-    </header>
-    <div class="dots dots1"></div>
-    <div class="dots dots2"></div>
-    <main>
-      <transition name="slide-fade" mode="out-in">
 
 
 
+<div class="bg-3 parallax-in">
+  <div class="caption"><center>
+  <span class="border" style="font-size: 4em;">Bramble Twist</span><br>
+  <span class="border">Escape Room & Games</span><br>
+  <div class="wrapper">
+    <a class="cta" onclick="scrollAnimation()">
+      <span>Start</span>
+      <span>
+        <svg width="66px" height="43px" viewBox="0 0 66 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <g id="arrow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <path class="one" d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+            <path class="two" d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+            <path class="three" d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z" fill="#FFFFFF"></path>
+          </g>
+        </svg>
+      </span> 
+    </a>
+  </div>
+</center>
+  </div>
+     <video class="video-parallax" autoplay loop muted>
 
+       <source src="start.mp4" type="video/mp4">
 
-        <p   key="bio" v-if="bg==='bio'">
-          <button onclick="location.href='sms:+17852149030'" style="width:100%;">
-            <font style="font-size: 60; color: white;font-family:'Euphoria Script';">Text 785.214.9030</font>
-          </button><br><br>
-          <button onclick="window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSdl0dy4U_kAXXg0PWmhgGfylccTYeV-hE9yv9lyyenRm2u_AA/viewform?usp=sf_link'" style="width:100%;">
-            <font style="font-size: 60; color: white;font-family:'Euphoria Script';">Get scheduled</font>
-          </button>
-<br>
+   </video>
+</div>
 
-<image src="pics/OpeningPage.png" style="width: 100%;"></image>
+<div>
+  <hr>
+  <h3>Adventure: The Fractured Harmony</h3>
+  
+  <p>
+  In the verdant realm of Bramble Twist, where whispers of magic rustle through ancient leaves, a once-unified symphony has fallen silent. The Song of Creation, woven by the very essence of the land, lies fractured, its fragments scattered across shattered threads of reality. This broken harmony has torn a rift, a digital blight seeping into the heart of Bramble Twist, a techno-virus known as the Rot.<br><br>
+  As brave adventurers, you must embark on a perilous quest. Guided by whispers of the fractured melody, you'll delve into forgotten groves and navigate shimmering portals, piecing together the scattered notes of the lost song. Your path will lead you through enchanted gardens teeming with luminous sprites and across moonlit meadows echoing with the mournful dirge of ancient wyrms.<br><br>
+  But beware, the Rot is ever-present, its tendrils of corrupted code slithering through the shadows, twisting the very fabric of Bramble Twist. It seeks to consume the remnants of the Song, plunging the realm into eternal discord. Only by uniting the scattered fragments, can you hope to restore the harmony of Bramble Twist, banishing the Rot and silencing its digital dissonance.<br><br>
+  Will you answer the call of the fractured melody? Will you become the weavers of a new harmony, and mend the tattered tapestry of Bramble Twist? The fate of this enchanted realm rests in your hands, and in the echoes of the Song of Creation, reborn.<br><br>
+  A shiver danced down your spine as you cradled the moss-dappled stone. Inscribed upon its surface, ancient symbols pulsed with an emerald glow, their rhythm echoing a melody that tugged at the forgotten corners of your mind. You hummed along, hesitantly at first, then with a growing confidence that surprised even yourself. The air crackled, leaves swirling around you in a miniature tempest, and for a fleeting moment, something shimmered beneath the skin of your fingertips – a spark of power, raw and untamed. This wasn't just a song, it was a conduit, awakening magic dormant within you, an echo of the Forgotten Song of Creation. The fate of worlds, it seemed, might just rest on your newfound voice.
+    <br><br>The melody intensified, weaving through you like threads of destiny. Visions flickered behind your closed eyelids – verdant forests bathed in twilight, ethereal beings of light, towering figures cloaked in shadow. The burden of this ancient song felt both immense and exhilarating. This wasn't just a game anymore; it was a quest, a call to rediscover the lost harmony, and perhaps, in doing so, awaken the magic buried deep within your own soul. Were you ready to answer the call?
+  
+  <br><hr>  
+  </p>
+</div>
 
+<div class="bg-1 parallax-in">
+  <div class="caption">
+    <div class="wrapper">
+      <a class="cta">
+        <span>Duration: 60 Minutes</span>
+        <span>
+          <svg width="66px" height="43px" viewBox="0 0 66 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g id="arrow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <path class="one" d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+              <path class="two" d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+              <path class="three" d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z" fill="#FFFFFF"></path>
+            </g>
+          </svg>
+        </span> 
+      </a>
+    </div>
 
-        </p>
+    <div class="wrapper">
+      <a class="cta">
+        <span>People: 2 to 10</span>
+        <span>
+          <svg width="66px" height="43px" viewBox="0 0 66 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g id="arrow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <path class="one" d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+              <path class="two" d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+              <path class="three" d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z" fill="#FFFFFF"></path>
+            </g>
+          </svg>
+        </span> 
+      </a>
+    </div>
 
+    <div class="wrapper">
+      <a class="cta">
+        <span>Success Rate: 62%</span>
+        <span>
+          <svg width="66px" height="43px" viewBox="0 0 66 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g id="arrow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <path class="one" d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+              <path class="two" d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+              <path class="three" d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z" fill="#FFFFFF"></path>
+            </g>
+          </svg>
+        </span> 
+      </a>
+    </div>
+    
 
-
-
-
-        <p   key="projects" v-if="bg==='projects'">
-            <a style="top: 0px; right: 5%; position:absolute;" onclick="scrollDown();" ><svg height="90px" width="90px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-	 viewBox="0 0 512.035 512.035" xml:space="preserve" >
-<g transform="translate(0,0)">
-	<polygon style="fill:#054950;" points="152.617,169.701 255.017,263.568 357.417,169.701 357.417,33.168 255.017,135.568
-		152.617,33.168 	"/>
-	<polyline style="fill:#231f20;" points="357.417,33.168 357.417,167.995 383.017,144.101 383.017,7.568 	"/>
-	<polygon style="fill:#FFFFFF;" points="152.617,167.995 152.617,33.168 127.017,7.568 127.017,144.101 	"/>
-	<polygon style="fill:darkred;" points="152.617,408.635 255.017,502.501 357.417,408.635 357.417,272.101 255.017,374.501
-		152.617,272.101 	"/>
-	<polyline style="fill:#231f20;" points="357.417,272.101 357.417,406.928 383.017,383.035 383.017,246.501 	"/>
-	<polygon style="fill:#FFFFFF;" points="152.617,406.928 152.617,272.101 127.017,246.501 127.017,383.035 	"/>
-	<path d="M255.017,272.101c-1.707,0-4.267-0.853-5.973-2.56l-128-119.467c-1.707-1.707-2.56-3.413-2.56-5.973V7.568
-		c0-3.413,1.707-6.827,5.12-7.68c3.413-1.707,6.827-0.853,9.387,1.707l122.027,122.027L377.044,1.595
-		c2.56-2.56,5.973-3.413,9.387-1.707s5.12,4.267,5.12,7.68v136.533c0,2.56-0.853,4.267-2.56,5.973l-42.667,40.107
-		c-3.413,3.413-8.533,3.413-11.947,0s-3.413-8.533,0-11.947l40.107-37.547V28.048L260.991,141.541
-		c-3.413,3.413-8.533,3.413-11.947,0L135.551,28.048v112.64l119.467,111.787l30.72-29.013c3.413-3.413,8.533-3.413,11.947,0
-		s3.413,8.533,0,11.947l-36.693,34.133C259.284,271.248,256.724,272.101,255.017,272.101z"/>
-	<path d="M308.777,208.101c0,5.12,3.413,8.533,8.533,8.533c5.12,0,8.533-3.413,8.533-8.533c0-5.12-3.413-8.533-8.533-8.533
-		C312.191,199.568,308.777,202.981,308.777,208.101"/>
-	<path d="M255.017,511.035c-1.707,0-4.267-0.853-5.973-2.56l-128-119.467c-1.707-1.707-2.56-3.413-2.56-5.973V246.501
-		c0-3.413,1.707-6.827,5.12-7.68c3.413-0.853,6.827-0.853,9.387,1.707l122.027,122.027l122.027-122.027
-		c2.56-2.56,5.973-3.413,9.387-1.707c3.413,1.707,5.12,4.267,5.12,7.68v136.533c0,2.56-0.853,4.267-2.56,5.973l-128,119.467
-		C259.284,510.181,256.724,511.035,255.017,511.035z M135.551,379.621l119.467,111.787l119.467-111.787v-112.64L260.991,380.475
-		c-3.413,3.413-8.533,3.413-11.947,0L135.551,266.981V379.621z"/>
-</g>
-</svg></a>
-<iframe style="width:100%; height: 1000px; top: -950px;" src="rose.html"></iframe>
-<image id="bottle" style="top: -950px;" class="bottle" src="pics/bottle.png"></image>
-
-
-        </p>
-        <p   key="find-me" v-if="bg==='find-me'">
-          <button  style="width:80%;" onclick="window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSdl0dy4U_kAXXg0PWmhgGfylccTYeV-hE9yv9lyyenRm2u_AA/viewform?usp=sf_link'">
-            <font style="font-size: 60;font-family:'Euphoria Script';">Book Now</font><font style="font-size: 40;color: darkred;font-family:'Euphoria Script';"> and relax in our accessory design lounge, complete with snacks and entertainment.</font>
-          </button>
-          <a style="top: 0px; right: 5%; position:absolute;" onclick="scrollDown();" ><svg height="90px" width="90px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
- viewBox="0 0 512.035 512.035" xml:space="preserve" >
-<g transform="translate(0,0)">
-<polygon style="fill:#054950;" points="152.617,169.701 255.017,263.568 357.417,169.701 357.417,33.168 255.017,135.568
-  152.617,33.168 	"/>
-<polyline style="fill:#231f20;" points="357.417,33.168 357.417,167.995 383.017,144.101 383.017,7.568 	"/>
-<polygon style="fill:#FFFFFF;" points="152.617,167.995 152.617,33.168 127.017,7.568 127.017,144.101 	"/>
-<polygon style="fill:darkred;" points="152.617,408.635 255.017,502.501 357.417,408.635 357.417,272.101 255.017,374.501
-  152.617,272.101 	"/>
-<polyline style="fill:#231f20;" points="357.417,272.101 357.417,406.928 383.017,383.035 383.017,246.501 	"/>
-<polygon style="fill:#FFFFFF;" points="152.617,406.928 152.617,272.101 127.017,246.501 127.017,383.035 	"/>
-<path d="M255.017,272.101c-1.707,0-4.267-0.853-5.973-2.56l-128-119.467c-1.707-1.707-2.56-3.413-2.56-5.973V7.568
-  c0-3.413,1.707-6.827,5.12-7.68c3.413-1.707,6.827-0.853,9.387,1.707l122.027,122.027L377.044,1.595
-  c2.56-2.56,5.973-3.413,9.387-1.707s5.12,4.267,5.12,7.68v136.533c0,2.56-0.853,4.267-2.56,5.973l-42.667,40.107
-  c-3.413,3.413-8.533,3.413-11.947,0s-3.413-8.533,0-11.947l40.107-37.547V28.048L260.991,141.541
-  c-3.413,3.413-8.533,3.413-11.947,0L135.551,28.048v112.64l119.467,111.787l30.72-29.013c3.413-3.413,8.533-3.413,11.947,0
-  s3.413,8.533,0,11.947l-36.693,34.133C259.284,271.248,256.724,272.101,255.017,272.101z"/>
-<path d="M308.777,208.101c0,5.12,3.413,8.533,8.533,8.533c5.12,0,8.533-3.413,8.533-8.533c0-5.12-3.413-8.533-8.533-8.533
-  C312.191,199.568,308.777,202.981,308.777,208.101"/>
-<path d="M255.017,511.035c-1.707,0-4.267-0.853-5.973-2.56l-128-119.467c-1.707-1.707-2.56-3.413-2.56-5.973V246.501
-  c0-3.413,1.707-6.827,5.12-7.68c3.413-0.853,6.827-0.853,9.387,1.707l122.027,122.027l122.027-122.027
-  c2.56-2.56,5.973-3.413,9.387-1.707c3.413,1.707,5.12,4.267,5.12,7.68v136.533c0,2.56-0.853,4.267-2.56,5.973l-128,119.467
-  C259.284,510.181,256.724,511.035,255.017,511.035z M135.551,379.621l119.467,111.787l119.467-111.787v-112.64L260.991,380.475
-  c-3.413,3.413-8.533,3.413-11.947,0L135.551,266.981V379.621z"/>
-</g>
-</svg></a><font style="font-family:'Suranna Script'"><br><br>
-
-Foretellings - - our consultations - prelude your transformative hair odyssey
- with a guidance session. These welcoming sessions weave a personalized adventure
-  for your strands, aligning your aspirations with our visionary care. Our guides,
-   steeped in wisdom, tailor a path that resonates with your spirit and hair's
-    essence. Step into Bramble Twist’s realm where inclusivity, care, and a bit
-     of adventure combine to guide you through the next step of your hair journey.
-</font>
-
-<font style="font-family:'Suranna Script'"><br><br>
-Everbloom Renewal - Restores hairs' natural vibrancy through deep cleansing and standard conditioning.
-<br>
-<img style="width:50%; display:block; justify:center;" src="pics/Renewal.jpg" ></img>
-<br>
-Everbloom Infusion - Replenishes parched strands with indulgent deep clean and hydrating hot oil condition.
-<br><br>
-Everbloom Repose- Mindfully detangles hair from any state to achieve renewed balance and harmony.
-<br>
-<img style="width:50%; display:block; justify:center;" src="pics/Repose.jpg" ></img>
-<br>
-Bloom Harvest - Reinvigorates fresh growth and refortifies form through meticulous maintenance care for locked hair.
-<br><br>
-The Bramble Twist- Lavishes strands with regal ornamentation sculpted into stunning styles.
-<br>
-<img style="width:50%; display:block; justify:center;" src="pics/BrambleTwist.jpg" ></img>
-<br>
-The Bramble - Begin your loc journey with intuitive detangling, careful sectioning, and starter loc cultivation.
-</font>
-
-        </p>
-
-
-
-
-        <p   key="specials" v-if="bg==='specials'">
-            <a style="top: 0px; right: 5%; position:absolute;" onclick="scrollDown();" ><svg height="90px" width="90px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-        viewBox="0 0 512.035 512.035" xml:space="preserve" >
-        <g transform="translate(0,0)">
-        <polygon style="fill:#054950;" points="152.617,169.701 255.017,263.568 357.417,169.701 357.417,33.168 255.017,135.568
-        152.617,33.168 	"/>
-        <polyline style="fill:#231f20;" points="357.417,33.168 357.417,167.995 383.017,144.101 383.017,7.568 	"/>
-        <polygon style="fill:#FFFFFF;" points="152.617,167.995 152.617,33.168 127.017,7.568 127.017,144.101 	"/>
-        <polygon style="fill:darkred;" points="152.617,408.635 255.017,502.501 357.417,408.635 357.417,272.101 255.017,374.501
-        152.617,272.101 	"/>
-        <polyline style="fill:#231f20;" points="357.417,272.101 357.417,406.928 383.017,383.035 383.017,246.501 	"/>
-        <polygon style="fill:#FFFFFF;" points="152.617,406.928 152.617,272.101 127.017,246.501 127.017,383.035 	"/>
-        <path d="M255.017,272.101c-1.707,0-4.267-0.853-5.973-2.56l-128-119.467c-1.707-1.707-2.56-3.413-2.56-5.973V7.568
-        c0-3.413,1.707-6.827,5.12-7.68c3.413-1.707,6.827-0.853,9.387,1.707l122.027,122.027L377.044,1.595
-        c2.56-2.56,5.973-3.413,9.387-1.707s5.12,4.267,5.12,7.68v136.533c0,2.56-0.853,4.267-2.56,5.973l-42.667,40.107
-        c-3.413,3.413-8.533,3.413-11.947,0s-3.413-8.533,0-11.947l40.107-37.547V28.048L260.991,141.541
-        c-3.413,3.413-8.533,3.413-11.947,0L135.551,28.048v112.64l119.467,111.787l30.72-29.013c3.413-3.413,8.533-3.413,11.947,0
-        s3.413,8.533,0,11.947l-36.693,34.133C259.284,271.248,256.724,272.101,255.017,272.101z"/>
-        <path d="M308.777,208.101c0,5.12,3.413,8.533,8.533,8.533c5.12,0,8.533-3.413,8.533-8.533c0-5.12-3.413-8.533-8.533-8.533
-        C312.191,199.568,308.777,202.981,308.777,208.101"/>
-        <path d="M255.017,511.035c-1.707,0-4.267-0.853-5.973-2.56l-128-119.467c-1.707-1.707-2.56-3.413-2.56-5.973V246.501
-        c0-3.413,1.707-6.827,5.12-7.68c3.413-0.853,6.827-0.853,9.387,1.707l122.027,122.027l122.027-122.027
-        c2.56-2.56,5.973-3.413,9.387-1.707c3.413,1.707,5.12,4.267,5.12,7.68v136.533c0,2.56-0.853,4.267-2.56,5.973l-128,119.467
-        C259.284,510.181,256.724,511.035,255.017,511.035z M135.551,379.621l119.467,111.787l119.467-111.787v-112.64L260.991,380.475
-        c-3.413,3.413-8.533,3.413-11.947,0L135.551,266.981V379.621z"/>
-        </g>
-      </svg></a><font style="font-family:'Euphoria Script'"><br><br>
-
-        <bold>Bramble Sprig</bold>
-          <br><br>
-
-        </font><font style="font-family:'Suranna Script'">
-          Explore the enchanting realm of locked hair with Bramble Sprig - an artful expression of individuality through a single, meticulously crafted dreadlock. Accompany this transformative journey with a bespoke 3D printed accessory, uniquely yours, symbolizing your venture into a world where natural beauty converges with boundless creativity.
-
-          <br><br>
-        </font><font style="font-family:'Euphoria Script'">
-          Bramble Sprig Details
-          <br><br>
-          </font><font style="font-family:'Suranna Script'">
-          Grow your Sprig (Suranna, standard) Witness the birth of your unique loc, a testament to your individuality, cultivated through our specialized locking methods that honor your hair’s natural grace.
-<br><br>
-</font><font style="font-family:'Euphoria Script'">
- Ornamentation
-<br><br>
-</font><font style="font-family:'Suranna Script'">
- Embellish your Bramble Sprig with its inaugural adornment. Select from our exquisite collection of designs, or collaborate with our artisans to create a bespoke piece, as distinctive as your journey.
-<br><br>
-</font><font style="font-family:'Euphoria Script'">
-Nourish your Sprig
-<br><br>
-</font><font style="font-family:'Suranna Script'">
- Armed with knowledge and specialized aftercare, we guide you in nurturing your Sprig, ensuring it flourishes healthily and beautifully.
-<br><br>
-</font><font style="font-family:'Euphoria Script'">
-Why the Bramble Sprig?
-<br><br>
-</font><font style="font-family:'Suranna Script'">
- Bramble Twist’s Welcome
- </font><font style="font-family:'Euphoria Script'">
-  We believe in a journey that’s as gentle on your mind as it is on your hair. Our natural products, tender locking methods, and inviting environment are crafted to ensure comfort and tranquility accompany you at every step
-  <br><br>
-</font><font style="font-family:'Euphoria Script'">
- Wholly You
-<br><br>
-</font><font style="font-family:'Suranna Script'">
-Each loc journey is a unique adventure, as individual as you are. Our guides are dedicated to preparing your hair for a voyage that’s exclusively yours.
-<br><br>
-</font><font style="font-family:'Euphoria Script'">
-Tiptoe into Locked Hair
-<br><br>
-</font><font style="font-family:'Suranna Script'">
-Venturing into dreadlocks can be a nerve-wracking leap into the unknown. By planting your Bramble Sprig in a key location, your single loc can be a subtle accent or a hidden gem, offering a taste of natural hair’s beauty without full commitment.
-<br><br>
-</font><font style="font-family:'Euphoria Script'">
-Unleash Your Wild Charm
-<br><br>
-</font><font style="font-family:'Suranna Script'">
-Be a trailblazer, stepping into the extraordinary with this singular loc style that sets you apart.<br><br>
- </font><font style="font-family:'Euphoria Script'">
-Adorn Your Bloom
-  <br><br>
-</font><font style="font-family:'Suranna Script'">
-Our 3D printed accessories, tailored by you, are not just decorations; they are extensions of your persona. Embrace your unique style as effortlessly as your Sprig becomes a part of you.
-<br><br>
-</font><font style="font-family:'Euphoria Script'">
-Plant Your Bramble Sprig
-<br><br>
-</font><font style="font-family:'Suranna Script'">
-Discover the magic of Bramble Sprig, where your unique journey starts at just $50. Join us for your complimentary foretelling where your Bramble Twist guides will unveil the path and expense to your personalized Bramble Sprig. The final empowerment’s price may be adjusted as we finalize the crafting of your Sprig to reflect your hair’s unique narrative.
-<br><br>
-</font><font style="font-family:'Suranna Script'">
-Step into a world where your transformation awaits, with no secrets, just the promise of an extraordinary experience tailored just for you.
-</font><br><br>
-
-          <button  style="width:100%;" onclick="window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSdl0dy4U_kAXXg0PWmhgGfylccTYeV-hE9yv9lyyenRm2u_AA/viewform?usp=sf_link'">
-            <font style="font-size: 60;font-family:'Euphoria Script';">Get to know me</font>
-          </button>
-        </font>
-        </p>
-
-
-
-
-      </transition>
-    </main>
   </div>
 </div>
 
 
+<div>
+  <hr>
+  <h3>Chapter 1 - Finding your magic</h3>
+  <p>Prepare to decipher cryptic riddles etched on whisper-worn bark, where poetry entwines with the arcane. Unsnarl tangled vines that thrum with ancient energy, revealing hidden pathways and secret chambers. Decipher powerful ciphers woven into the very fabric of the forest, each symbol a stepping stone on your path to unlocking your dormant potential.<br><br>
+    But beware, the Rot lurks in the shadows, its tendrils of corrupted code seeking to unravel your progress. Solve intricate puzzles that banish digital blight, testing your logic and ingenuity. Master forgotten rituals whispered on the wind, channeling the raw power of Bramble Twist to overcome the Rot’s barriers.<br><br>
+    Will you unravel the mysteries of the first chapter and unlock your own spark of magic? Step into the immersive embrace of Bramble Twist and embark on a journey of self-discovery, where every puzzle unlocks a piece of your hidden potential. The fate of the realm, and your own destiny, hangs in the balance. Are you ready to Find Your Magic?<br><br>
+  <hr>  
+  </p>
+</div>
 
+<div class="bg-2 parallax-in">
+  <div class="caption">
+    <div class="buy">
+      <script async
+      src="https://js.stripe.com/v3/buy-button.js">
+    </script>
+    
+    <stripe-buy-button
+      buy-button-id="buy_btn_1Oc7gUD6du5X90rdcJNiSVvy"
+      publishable-key="pk_live_51Oc6tLD6du5X90rdfORPQKsdJFsermrmyovFM7jNUBhfDBpFa6LGQ1xEptE5TqecfUJd5nZ5QmoFfpn7mqqZHFVf00AhD1msGW"
+    >
+    </stripe-buy-button>
+    </div>
+    
+  </div>
+</div>
+
+<div class="parallax-out">
+  <div class="caption">
+  
+  </div>
+</div>
+<div>
+  <p>
+    <hr>
+        <div class="wrapper">
+          <a class="cta" id='btnGiveCommand'>
+            <span>Click to chant</span>
+            <span>
+              <svg width="66px" height="43px" viewBox="0 0 66 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="arrow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                  <path class="one" d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+                  <path class="two" d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+                  <path class="three" d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z" fill="#FFFFFF"></path>
+                </g>
+              </svg>
+            </span> 
+          </a>
+        </div>
+        <br><br>
+        <span id='message'></span>
+        <p>Practice our introductory chant to reveal a treasure</p>
+        <input id='chkSteve' type="checkbox"> Code unveiled, puzzle cracked, follow the path, truth unstacked.<br>
+        <image src="pics/spot1.png" style="display:none;" id="hidden"></image>
+        <br>
+    
+        <span class="border">Unlock hidden layers of the mystery: Bring your charged phone to unveil secret AR clues, play audio files, and embark on an optional local scavenging adventure that expands the story beyond Bramble Twist's walls.</span>
+    <hr>
+      </p>
+</div>
+
+<div class="bg-4 parallax-in">
+  <div class="caption">
+    <center><span class="border">1311 E 13th St, Ste C <br>
+      Kansas City, MO 64106<br><br>
+      785-214-9030<br><br>
+      brambletwist@gmail.com
+    </span></center>
+    
+  </div>
+</div>
 <!-- partial -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.min.js'></script><script  src="./script.js"></script>
+<script  src="script.js"></script>
+
+
 
 </body>
 </html>

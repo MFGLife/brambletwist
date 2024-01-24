@@ -1,377 +1,174 @@
-:root {
-  --purple-brown: #231f20;
-  --egg-shell: #ebd3cc;
-  --dark-peach: #054950;
-  --blood-red: #8B0000;
-  --border-width: .75rem;
-  --dots-gap: 10px;
-}
 
-*, *:before, *:after {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Euphoria Script', Georgia, serif;
-  line-height: 1.5;
-  color: var(--egg-shell);
-}
-
-
-/* For Webkit browsers like Chrome, Safari */
-::-webkit-scrollbar {
-    display: none;
-}
-
-/* For Firefox */
-html {
-    scrollbar-width: none;
-    overflow: -moz-scrollbars-none;
-}
-
-/* For IE and Edge */
-body {
-    -ms-overflow-style: none;
-}
-
-a {
-  color: inherit;
-}
-
-.bg {
-  background: inherit;
-  min-height: 100vh;
-  padding: 25vh 0 1.5rem;
-  transition: background 0s 1s, color 0.6s;
-}
-
-.projects {
-  color: var(--purple-brown);
-}
-
-.bg:after {
-  content: "";
-  border: var(--border-width) solid;
-  position: fixed;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  z-index: 12;
-  pointer-events: none;
-  transition: 1s;
-}
-
-.bio,
-.link-bio {
-  background: var(--purple-brown);
-}
-
-.bio h1 {
-  background-color: var(--dark-peach);
-}
-
-.projects,
-.link-projects {
-  background: var(--egg-shell);
-}
-
-.find-me,
-.link-find-me {
-  background: var(--dark-peach);
-}
-
-.specials,
-.link-specials {
-  background: var(--blood-red);
-}
-
-.transition {
-  width: 1rem;
-  height: 1rem;
-  top: 0;
-  display: block;
-  position: absolute;
-  opacity: 0;
-  transition: transform 0.6s ease-in-out;
-  width: 100%;
-  height: 100vh;
-  transform: scale(0.1);
-  transform-origin: 0 0;
-}
-
-.transition-bio {
-  left: 0;
-  background: var(--purple-brown);
-}
-
-.transition-projects {
-  left: 7.5rem;
-  background: var(--egg-shell);
-}
-
-.transition-find-me {
-  left: 15rem;
-  background: var(--dark-peach);
-}
-
-.transition-specials {
-  left: 15rem;
-  background: var(--blood-red);
-}
-
-.bio .transition-bio,
-.projects .transition-projects,
-.find-me .transition-find-me,
-.specials .transition-specials {
-  opacity: 1;
-}
-
-.bio .transition-bio {
-  transform: scale(1);
-}
-
-.projects .transition-projects {
-  transform: scale(1) translateX(-7.5rem);
-}
-
-.find-me .transition-find-me {
-  transform: scale(1) translateX(-15rem);
-}
-
-.dots:before,
-.dots:after {
-  content: "";
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  opacity: 0.5;
-  z-index: 11;
-  background-image: linear-gradient(var(--dark-peach) 20%, transparent 0);
-  background-size: 100% var(--dots-gap);
-  background-position: 0 0;
-  -webkit-animation: movebg 0.2s linear infinite;
-          animation: movebg 0.2s linear infinite;
-  will-change: transform;
-  width: 2px;
-}
-
-.dots1:before {
-  left: 5%;
-}
-
-.dots1:after {
-  left: 15%;
-}
-
-.dots2:before {
-  right: 75%;
-}
-
-.dots2:after {
-  right: 5%;
-}
-
-.dots:after {
-  animation-direction: reverse;
-}
-
-.projects .dots:before,
-.projects .dots:after {
-  background-image: linear-gradient(var(--purple-brown) 20%, transparent 0);
-}
-
-.find-me .dots:before,
-.find-me .dots:after {
-  background-image: linear-gradient(var(--egg-shell) 20%, transparent 0);
-}
-
-.specials .dots:before,
-.specials .dots:after {
-  background-image: linear-gradient(var(--blood-red) 20%, transparent 0);
-}
-
-@-webkit-keyframes movebg {
-  0% {
-    transform: translate3d(0, 0, 0);
-  }
-  100% {
-    transform: translate3d(0, var(--dots-gap), 0);
-  }
-}
-
-@keyframes movebg {
-  0% {
-    transform: translate3d(0, 0, 0);
-  }
-  100% {
-    transform: translate3d(0, var(--dots-gap), 0);
-  }
-}
-h1 {
-  font-family: 'Euphoria Script';
-  text-align: center;
-  margin: 0;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #000), color-stop(0.5, #000), color-stop(1, transparent));
-  transition: background-position 1s, background-color 1s;
-  text-align: center;
-  font-size: calc(30vw + 1rem);
-  font-weight: 900;
-  line-height: 1;
-  background-image: url("pics/1.png"), url("pics/2.png"), url("pics/3.png");
-  background-size: 100vh auto, 100vh auto, 100vh auto;
-  background-repeat: repeat-x;
-  background-position: 0px 15%, 200px 25%, -50px 2vw;
-}
-
-.projects h1 {
-  background-color: var(--dark-peach);
-  background-position: -120px 15%, 230px 20%, 100px 3vw;
-}
-
-.find-me h1 {
-  background-color: var(--egg-shell);
-  background-position: top left, 260px 25%, -150px 1vw;
-}
-
-.specials h1 {
-  background-color: var(--dark-peach);
-  background-position: top left, 260px 25%, -150px 1vw;
-}
-
-h2 {
-  font-family: 'Euphoria Script';
-  position: absolute;
-  top: calc(30vh - 9rem);
-  left: 15%;
-  text-align: center;
-  margin: 0;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #000), color-stop(0.5, #000), color-stop(1, transparent));
-  transition: background-position 1s, background-color 1s;
-  text-align: center;
-  font-size: calc(24vw + 1rem);
-  font-weight: 900;
-  line-height: 1;
-  background-color: white;
-  background-image: url("pics/1.png"), url("pics/2.png"), url("pics/3.png");
-  background-size: 100vh auto, 100vh auto, 100vh auto;
-  background-repeat: repeat-x;
-  background-position: 0px 15%, 200px 25%, -50px 2vw;
-}
-
-.projects h2 {
-  background-color: var(--dark-peach);
-  background-position: -120px 15%, 230px 20%, 100px 3vw;
-}
-
-.find-me h2 {
-  background-color: var(--egg-shell);
-  background-position: bottom left, 260px 25%, -150px 1vw;
-}
-
-.specials h2 {
-  background-color: white;
-  background-position: top right, -260px 25%, 150px 2vw;
-}
-
-nav {
-  position: fixed;
-  top: var(--border-width);
-  left: var(--border-width);
-width: 99%;
-  z-index: 10;
-}
-nav ul {
-  list-style: none;
-  display: flex;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-}
-nav li {
-  flex: 1 0 2.5rem;
-}
-nav a {
-  display: block;
-  padding: 0.75rem 0 0.5rem;
-  color: var(--egg-shell);
-  text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-size: 1rem;
-}
-nav .link-projects {
-  color: var(--purple-brown);
-}
-
-main {
-  position: relative;
-  max-width: 95vw;
-  margin: -3rem auto 0;
-  font-size: 2rem;
-}
-
-.slide-fade-enter-active {
-  transition: all 1s ease;
-}
-
-.slide-fade-leave-active {
-  transition: all 0.5s;
-}
-
-.slide-fade-enter, .slide-fade-leave-to {
-  transform: translateY(2rem);
-  opacity: 0;
-}
-button {
-  background-color: transparent;
-  border: 3px solid white;
-  padding: 4px 20px;
-  color: #000; /* Change this to your desired text color */
-  cursor: pointer;
-  transition: background 0.2s ease;
-  font-family: Trocchi, Georgia, serif;
-  font-size: .7em;
-  color: white;
-}
-
-button:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-}
-
-
-.bottle {
-  /* Rotate and shrink */
-  /* Ensure the transform origin is the bottom of the image, for a realistic bounce */
-  transform-origin: bottom;
-  top: -650px;
-  left: 0;
-  /* Add the bounce animation */
-  animation: bounce 9s infinite;
-
-  /* Other styles (for inside and outside shadow) */
-  position: relative;
-}
-
-/* Keyframes for the bounce animation */
-@keyframes bounce {
-  0%, 100% {
-      transform: rotate(70deg) scale(0.5) translateY(0);
-  }
-  50% {
-      transform: rotate(70deg) scale(0.5) translateY(-20px);
-  }
-}
-
-.bottle::before {
-  content: '';
-  position: absolute;
-  width: 100%;
+body, html {
   height: 100%;
-  pointer-events: none;
-  /* Add inside shadow style here */
+  margin: 0;
+  font: 400 15px/1.8 "Merriweather", sans-serif;
+  color: #777;
 }
+.parallax-in, 
+.parallax-out,
+.video-parallax{
+  position:relative;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+.parallax-in {
+  opacity: 1;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bg-1 {
+  background-image: url("pics/wall1.png");
+  min-height: 100%;
+}
+
+.bg-2 {
+  background-image: url("pics/wall2.png");
+  min-height: 70%;
+}
+
+.bg-3 {
+  min-height: auto;
+}
+
+.bg-4 {
+  background-image: url("pics/wall3.png");
+  min-height: 70%;
+}
+
+.caption {
+  position: absolute;
+top: 40%;
+  z-index:6;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-align:center;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+p{
+  padding: 0 1em 0 1em;
+}
+.video-parallax{
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+  .parallax-in {
+    background-attachment: scroll;
+  }
+}
+
+.buy {
+
+  position: relative;
+  z-index: 99;
+  bottom: 100px;
+}
+
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.cta {
+    display: flex;
+    padding: 10px 45px;
+    text-decoration: none;
+    font-family: 'Merriweather', sans-serif;
+    font-size: 40px;
+    color: white;
+    background: #6225E6;
+    transition: 1s;
+    box-shadow: 6px 6px 0 black;
+    transform: skewX(-15deg);
+}
+
+.cta:focus {
+   outline: none; 
+}
+
+.cta:hover {
+    transition: 0.5s;
+    box-shadow: 10px 10px 0 #FBC638;
+}
+
+.cta span:nth-child(2) {
+    transition: 0.5s;
+    margin-right: 0px;
+}
+
+.cta:hover  span:nth-child(2) {
+    transition: 0.5s;
+    margin-right: 45px;
+}
+
+  span {
+    transform: skewX(15deg) 
+  }
+
+  span:nth-child(2) {
+    width: 20px;
+    margin-left: 30px;
+    position: relative;
+    top: 12%;
+  }
+  
+/**************SVG****************/
+
+path.one {
+    transition: 0.4s;
+    transform: translateX(-60%);
+}
+
+path.two {
+    transition: 0.5s;
+    transform: translateX(-30%);
+}
+
+.cta:hover path.three {
+    animation: color_anim 1s infinite 0.2s;
+}
+
+.cta:hover path.one {
+    transform: translateX(0%);
+    animation: color_anim 1s infinite 0.6s;
+}
+
+.cta:hover path.two {
+    transform: translateX(0%);
+    animation: color_anim 1s infinite 0.4s;
+}
+
+/* SVG animations */
+
+@keyframes color_anim {
+    0% {
+        fill: white;
+    }
+    50% {
+        fill: #FBC638;
+    }
+    100% {
+        fill: white;
+    }
+}
+

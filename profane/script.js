@@ -26,9 +26,9 @@ function populateGallery(foldersWithCaptions, imageCountPerFolder) {
 
 
 populateGallery({
-  'collective':'Collective',
+  'collective':'Escaped',
   // ... add other folders and captions as necessary
-}, 20); // Modify the image count as needed
+}, 12); // Modify the image count as needed
 
 
 
