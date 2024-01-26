@@ -68,6 +68,3 @@ document.querySelector('#btnGiveCommand').addEventListener('click', function(){
     scrollAnimation2();
   }
   
-  // Attach the scrollToAbsoluteBottom function to the second button's click event
-  // (Assuming your button has an ID of "button2")
-  document.getElementById("button2").addEventListener("click", scrollToAbsoluteBottom);

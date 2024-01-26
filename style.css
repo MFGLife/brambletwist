@@ -53,6 +53,14 @@ top: 40%;
   letter-spacing: 10px;
 }
 
+.border2 {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 4em;
+  letter-spacing: 10px;
+}
+
 h3 {
   letter-spacing: 5px;
   text-align:center;
@@ -176,4 +184,30 @@ path.two {
   .google{
     width: 400px;
   }
+  .caption span.border {
+    font-size: 25px;
+    letter-spacing: 2px;
+  }
+  .border2{
+    font-size: 25px;
+    letter-spacing: 2px;
+  }
+  .cta {
+    padding: 2px 5px;
+    font-size: 30px;
+}
+}
+
+/* styles.css */
+.puzzle-images {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.puzzle-images img {
+  max-width: 200px;
+  height: auto;
+  margin: 5px;
 }
