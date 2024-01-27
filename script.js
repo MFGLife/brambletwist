@@ -99,7 +99,7 @@ var x = setInterval(function() {
 
     function loadIframe() {
       var iframe = document.getElementById("augment");
-      iframe.src = "https://the-profane.com";
+      iframe.src = "ar/index.html";
       iframe.style.display = "block";
       document.getElementById("realityB").style.display = "none";
       document.getElementById("realityL").style.display = "block";
