@@ -96,3 +96,12 @@ var x = setInterval(function() {
     document.getElementById("countdown").innerHTML = "EXPIRED";
   }
 }, 1000);
+
+    function loadIframe() {
+      var iframe = document.getElementById("augment");
+      iframe.src = "https://the-profane.com";
+      iframe.style.display = "block";
+      document.getElementById("realityB").style.display = "none";
+      document.getElementById("realityL").style.display = "block";
+    }
+
