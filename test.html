@@ -89,9 +89,11 @@
               const canplayWebm = testVideo.canPlayType( 'video/webm; codecs="vp8, vorbis"' );
               if (canplayWebm == "") {
                 document.querySelector("#paintandquest-video-link").setAttribute("src", "#start");
+                document.querySelector("#paintandquest-video-mp4").mute();
                 document.querySelector("#paintandquest-video-mp4").play();
               } else {
                 document.querySelector("#paintandquest-video-link").setAttribute("src", "#paintandquest-video-webm");
+                document.querySelector("#paintandquest-video-webm").mute();
                 document.querySelector("#paintandquest-video-webm").play();
               }
             });
@@ -224,8 +226,8 @@
           <img id="icon-left" src="./pics/left.png" />
           <img id="icon-right" src="./pics/right.png" />
           <img id="paintandquest-preview" src="./pics/paintandquest-preview.png" />
-          <video id="paintandquest-video-mp4" autoplay="false" loop="true" src="./start.mp4"></video>
-          <video id="paintandquest-video-webm" autoplay="false" loop="true" src="./start.webm"></video>
+          <video controls muted id="paintandquest-video-mp4" autoplay="false" loop="true" src="./start.mp4"></video>
+          <video controls muted id="paintandquest-video-webm" autoplay="false" loop="true" src="./start.webm"></video>
           <img id="coffeemachine-preview" src="./pics/puz4.jpg" />
           <img id="peak-preview" src="./pics/puzzle.jpg" />
           
