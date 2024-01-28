@@ -1558,7 +1558,7 @@ var Qb=[Ik,Zh,_h,Qj,Qi,Pi,Ri,Ag,sg,qg,rg,yg,kh,jh,Oi,Mj];var Rb=[Jk,ki,ji,gi];va
 			files = files.map(function(file) {
 				// FIXME super kludge - remove it
 				// console.assert(file !== '')
-				if( file === 'patt.bramble' || file === 'patt.kanji' || file === 'patt2.bramble' || file === 'patt2.kanji' ){
+				if( file === 'patt.hiro' || file === 'patt.kanji' || file === 'patt2.hiro' || file === 'patt2.kanji' ){
 					// debugger
 					return ['http://127.0.0.1:8080/data/data/' + file, file]
 				}
@@ -5657,7 +5657,7 @@ ARjs.Profile.prototype.reset = function () {
 	}
 	this.defaultMarkerParameters = {
 		type : 'pattern',
-		patternUrl : THREEx.ArToolkitContext.baseURL + '../data/data/patt.bramble',
+		patternUrl : THREEx.ArToolkitContext.baseURL + '../data/data/patt.hiro',
 		changeMatrixMode: 'modelViewMatrix',
 	}
 	return this
@@ -5712,7 +5712,7 @@ ARjs.Profile.prototype.defaultMarker = function (trackingBackend) {
 	if( trackingBackend === 'artoolkit' ){
 		this.contextParameters.detectionMode = 'mono'
 		this.defaultMarkerParameters.type = 'pattern'
-		this.defaultMarkerParameters.patternUrl = THREEx.ArToolkitContext.baseURL + '../data/data/patt.bramble'
+		this.defaultMarkerParameters.patternUrl = THREEx.ArToolkitContext.baseURL + '../data/data/patt.hiro'
 	}else if( trackingBackend === 'aruco' ){
 		this.contextParameters.detectionMode = 'mono'
 		this.defaultMarkerParameters.type = 'barcode'
