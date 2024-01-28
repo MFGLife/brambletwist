@@ -99,9 +99,8 @@ var x = setInterval(function() {
 
     function loadIframe() {
       var iframe = document.getElementById("augment");
-      iframe.src = "ar/index.html";
+      iframe.src = "test.html";
       iframe.style.display = "block";
       document.getElementById("realityB").style.display = "none";
-      document.getElementById("realityL").style.display = "block";
     }
 

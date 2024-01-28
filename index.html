@@ -29,6 +29,7 @@
   
   <title>BrambleTwist</title>
   <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 
 </head>
 <body>
@@ -83,9 +84,13 @@
 </div>
 
 <div class="bg-1 parallax-in">
-  <div id="realityL" style="display: none;"><img height="200px" style="background:white;" src="pics/letterC.png"><br><div class="border"><h2>With two devices, you might see magic in our double reflection.</h2></div>
+  <div id="realityL" style="display: none;"><div class="border"><h2>With two devices, you might see magic in our double reflection.</h2></div>
   </div>
-  <iframe id="augment" style="display:none;" width="400" height="400"></iframe><br>
+
+  <div id="iframeContainer">
+    <iframe id="augment" style="display:none;" width="400" height="400" src="test.html"></iframe>
+  </div>
+
   <div class="wrapper" id="realityB">
     <a class="cta" onclick="loadIframe()">
       <span>Augment Reality</span>
@@ -199,7 +204,17 @@
 <!-- partial -->
 <script  src="script.js"></script>
 
-
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+  $( function() {
+    $( "#iframeContainer" ).draggable({
+      start: function(event, ui) {
+        $(this).css('z-index', '9999'); // Set the z-index to the highest value when dragging starts
+      }
+    });
+  } );
+</script>
 
 </body>
 </html>
