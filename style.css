@@ -213,9 +213,10 @@ path.two {
 }
 
 #iframeContainer {
-  position: relative;
+  position: absolute;
   width: 400px;
   height: 400px;
+  background-color: transparent;
 }
 #augment {
   position: absolute;
