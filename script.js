@@ -30,10 +30,43 @@ recognition.onresult = function(event) {
     var command = event.results[last][0].transcript;
     message.textContent = 'Voice Input: ' + command + '.';
 
-    if(command.toLowerCase() === 'code unveiled puzzle cracked follow the path truth unstacked'){
-        document.querySelector('#chkSteve').checked = true;
-        document.getElementById('hidden').style.display = "block";
-        scrollToAbsoluteBottom();
+    if (command.toLowerCase() === 'the botanist'){
+        document.querySelector('#botanist').checked = true;
+        document.getElementById('players').src = 'https://the-profane.com/player1.html';
+        window.scrollBy(0, -600);
+    } else if (command.toLowerCase() === 'the mechanic'){
+      document.querySelector('#mechanic').checked = true;
+      document.getElementById('players').src = 'https://the-profane.com/player2.html';
+      window.scrollBy(0, -600);
+    } else if (command.toLowerCase() === 'the assessor'){
+      document.querySelector('#assessor').checked = true;
+      document.getElementById('players').src = 'https://the-profane.com/player3.html';
+      window.scrollBy(0, -600);
+    }
+    else if (command.toLowerCase() === 'the purifier'){
+      document.querySelector('#purifier').checked = true;
+      document.getElementById('players').src = 'https://the-profane.com/player4.html';
+      window.scrollBy(0, -600);
+    }
+    else if (command.toLowerCase() === 'the historian'){
+      document.querySelector('#historian').checked = true;
+      document.getElementById('players').src = 'https://the-profane.com/player5.html';
+      window.scrollBy(0, -600);
+    }
+    else if (command.toLowerCase() === 'the sanitizer'){
+      document.querySelector('#sanitizer').checked = true;
+      document.getElementById('players').src = 'https://the-profane.com/player6.html';
+      window.scrollBy(0, -600);
+    }
+    else if (command.toLowerCase() === 'the chemist'){
+      document.querySelector('#chemist').checked = true;
+      document.getElementById('players').src = 'https://the-profane.com/player7.html';
+      window.scrollBy(0, -600);
+    }
+    else if (command.toLowerCase() === 'the blender'){
+      document.querySelector('#blender').checked = true;
+      document.getElementById('players').src = 'https://the-profane.com/player8.html';
+      window.scrollBy(0, -600);
     }
  
 };
