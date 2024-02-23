@@ -120,8 +120,7 @@ var x = setInterval(function() {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
     
   // Display the result in the element with id="countdown"
-  document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
+  document.getElementById("countdown").innerHTML = "opens in " + days + "d " + hours + "h";
     
   // If the countdown is over, display a message
   if (distance < 0) {
@@ -137,3 +136,49 @@ var x = setInterval(function() {
       document.getElementById("realityB").style.display = "none";
     }
 
+
+    
+
+    const snacks = [
+      {
+        name: "10 Pretzel Balls",
+        ingredients: ["Flour", "Water", "Salt", "Honey", "Butter", "Yeast", "Backing Soda", "Milk"],
+      },
+      {
+        name: "6 Donuts",
+        ingredients: ["Flour", "Eggs", "Milk", "Honey", "Veg Oil", "Vanilla Extract", "Cinnamon", "Nutmeg", "Allspice"],
+      },
+      {
+        name: "20 Pina Colada Gummies",
+        ingredients: ["Gelatin", "Honey", "Pineapple Juice", "Coconut Milk"],
+      },
+      {
+        name: "10oz Kale Chips",
+        ingredients: ["Kale, Olive Oil, Sea Salt"],
+      },
+    ];
+    const snackItems = document.querySelectorAll(".snack-item");
+const ingredientList = document.getElementById("ingredient-list");
+
+// Function to display ingredients based on clicked item's text content
+const showIngredients = (snackName) => {
+  // Find the matching snack object based on the name
+  const selectedSnack = snacks.find((snack) => snack.name === snackName);
+
+  if (selectedSnack) {
+    ingredientList.innerHTML = `<h2>${selectedSnack.name} Ingredients:</h2><p>`;
+    ingredientList.innerHTML += selectedSnack.ingredients.join(", ");
+    ingredientList.innerHTML += "</p>";
+  } else {
+    ingredientList.innerHTML = "No ingredient information available.";
+  }
+};
+
+// Loop through each snack item and add click event listener
+snackItems.forEach((item) => {
+  item.addEventListener("click", () => {
+    // Extract snack name from the clicked item's text content
+    const snackName = item.textContent.trim();
+    showIngredients(snackName);
+  });
+});

@@ -21,7 +21,7 @@ body, html {
   background-size: cover;
 }
 .bg-1 {
-  background-image: url("pics/wall1.png");
+  background-image: url("pics/snack.png");
   min-height: 70%;
 }
 
@@ -211,9 +211,9 @@ path.two {
 }
 
 .image-container img {
-  width: 50%;
+  width: 49vw;
   height: auto;
-  object-fit: cover;
+  object-fit: contain;
   margin: 5px;
 }
 
@@ -255,3 +255,17 @@ path.two {
   box-sizing: border-box;
 }
 
+
+
+.snack-item {
+  width: 25%; /* Default width for smaller devices */
+  text-align: center;
+  margin: 10px;
+}
+
+
+@media (max-width: 800px) {
+  .snack-item {
+    width: 50%; /* Change width for larger devices */
+  }
+}
