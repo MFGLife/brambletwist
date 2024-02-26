@@ -5,6 +5,14 @@ body, html {
   font: 400 15px/1.8 "Merriweather", sans-serif;
   color: #777;
 }
+
+
+#app {
+  top: 0;
+  position: absolute;
+  z-index: 999999999999;
+}
+
 .parallax-in, 
 .parallax-out,
 .video-parallax{
