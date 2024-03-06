@@ -134,9 +134,7 @@ p{
     margin-right: 45px;
 }
 
-  span {
-    transform: skewX(15deg) 
-  }
+
 
   span:nth-child(2) {
     width: 20px;
