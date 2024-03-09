@@ -3,7 +3,7 @@ import socketserver
 import os
 
 # Set the port number
-port = 8006
+port = 8007
 
 # Set the directory to the current working directory
 directory = '.'  # Uncomment this line if you want test.html to be served for any path

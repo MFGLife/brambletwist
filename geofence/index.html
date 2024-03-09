@@ -4,53 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Geofencing with Compass</title>
-<style>
-  .compass-container {
-    width: 200px;
-    height: 200px;
-    position: relative;
-    margin-bottom: 20px;
-  }
-  .compass {
-    width: 200px;
-    height: 200px;
-    background: url('compass.png') no-repeat;
-    background-size: contain;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-  .needle {
-    width: 10px;
-    height: 100px;
-    background-color: red;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform-origin: 50% 100%;
-    transform: rotate(0deg);
-  }
-</style>
+
 </head>
 <body>
-
-<div class="compass-container">
-  <div class="compass" id="compass1">
-    <div class="needle" id="needle1"></div>
-  </div>
-</div>
-
-<div class="compass-container">
-  <div class="compass" id="compass2">
-    <div class="needle" id="needle2"></div>
-  </div>
-</div>
-
-<div class="compass-container">
-  <div class="compass" id="compass3">
-    <div class="needle" id="needle3"></div>
-  </div>
-</div>
 
 <div id="message"></div>
 
@@ -58,23 +14,20 @@
   // Geofence coordinates
   const centerLatitude = 39.098055689582345;
   const centerLongitude = -94.56668448927029;
-  const fenceRadius = 30; // in meters
-  const numCheckpoints = 3;
+  const fenceRadius = 1; // in meters
+  const numCheckpoints = 5;
   const checkpointOffset = 0.0001; // Offset to place checkpoints slightly away from each other
   
   // Checkpoint coordinates
   const checkpoints = [
     { latitude: centerLatitude, longitude: centerLongitude + (checkpointOffset * 3) },
     { latitude: centerLatitude, longitude: centerLongitude },
+    { latitude: centerLatitude, longitude: centerLongitude + (checkpointOffset * 2) },
+    { latitude: centerLatitude, longitude: centerLongitude - (checkpointOffset * 2) },
     { latitude: centerLatitude, longitude: centerLongitude - (checkpointOffset * 3) }
   ];
 
-  // Needle elements
-  const needles = [
-    document.getElementById('needle1'),
-    document.getElementById('needle2'),
-    document.getElementById('needle3')
-  ];
+
 
   // Message element
   const message = document.getElementById('message');
@@ -96,10 +49,7 @@
     return d;
   }
 
-  // Function to update needle direction
-  function updateCompass(needle, heading) {
-    needle.style.transform = `rotate(${heading}deg)`;
-  }
+
 
   // Function to check if the user is near a checkpoint
   function checkCheckpoints(latitude, longitude) {
@@ -135,15 +85,6 @@
   // Get user's current location
   navigator.geolocation.watchPosition(updateUserLocation, locationError);
 
-  // Function to update compass and check checkpoints on device orientation change
-  window.addEventListener('deviceorientation', function(event) {
-    const alphas = [event.alpha, event.alpha + 180, event.alpha - 180];
-    for (let i = 0; i < numCheckpoints; i++) {
-      if (alphas[i] !== null) {
-        updateCompass(needles[i], alphas[i]);
-      }
-    }
-  });
 </script>
 
 </body>
