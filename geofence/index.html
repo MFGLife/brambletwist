@@ -34,11 +34,19 @@
 
 <script>
   // Geofence coordinates
-
-  const fenceLatitude = 39.09798200771945;
-  const fenceLongitude = -94.5665162390781;
-  const fenceRadius = 10; // in meters
+  const centerLatitude = 39.098055689582345;
+  const centerLongitude = -94.56668448927029;
+  const fenceRadius = 30; // in meters
+  const numCheckpoints = 3;
+  const checkpointOffset = 0.0001; // Offset to place checkpoints slightly away from each other
   
+  // Checkpoint coordinates
+  const checkpoints = [
+    { latitude: centerLatitude, longitude: centerLongitude + (checkpointOffset * 3) },
+    { latitude: centerLatitude, longitude: centerLongitude },
+    { latitude: centerLatitude, longitude: centerLongitude - (checkpointOffset * 3) }
+  ];
+
   // Needle element
   const needle = document.getElementById('needle');
 
@@ -67,31 +75,30 @@
     needle.style.transform = `rotate(${heading}deg)`;
   }
 
-  // Function to check if the user is inside the geofence
-  function checkGeofence(latitude, longitude) {
-    const distance = calculateDistance(latitude, longitude, fenceLatitude, fenceLongitude);
-    if (distance < fenceRadius) {
-      message.textContent = "You win!";
-    } else if (distance < (fenceRadius * 2)) {
-      message.textContent = "You're close!";
-    } else {
-      message.textContent = "";
+  // Function to check if the user is near a checkpoint
+  function checkCheckpoints(latitude, longitude) {
+    for (let i = 0; i < numCheckpoints; i++) {
+      const distance = calculateDistance(latitude, longitude, checkpoints[i].latitude, checkpoints[i].longitude);
+      if (distance < fenceRadius) {
+        message.textContent = `You are close to checkpoint ${i + 1}`;
+        return i; // Return the index of the checkpoint
+      }
     }
+    return -1; // No checkpoint nearby
   }
 
-  // Function to update compass and check geofence on device orientation change
-  window.addEventListener('deviceorientation', function(event) {
-    const alpha = event.alpha; // Compass heading in degrees
-    if (alpha !== null) {
-      updateCompass(alpha);
-    }
-  });
-
-  // Function to update user location and check geofence
+  // Function to update user location and check checkpoints
   function updateUserLocation(position) {
     const latitude = position.coords.latitude;
     const longitude = position.coords.longitude;
-    checkGeofence(latitude, longitude);
+    const checkpointIndex = checkCheckpoints(latitude, longitude);
+    if (checkpointIndex !== -1) {
+      message.textContent = `Captured checkpoint ${checkpointIndex + 1}`;
+    }
+    const allCaptured = [...Array(numCheckpoints).keys()].every(index => calculateDistance(latitude, longitude, checkpoints[index].latitude, checkpoints[index].longitude) < fenceRadius);
+    if (allCaptured) {
+      message.textContent = "You win!";
+    }
   }
 
   // Function to handle location error
