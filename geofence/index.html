@@ -5,14 +5,22 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Geofencing with Compass</title>
 <style>
-  #compass {
+  .compass-container {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    margin-bottom: 20px;
+  }
+  .compass {
     width: 200px;
     height: 200px;
     background: url('compass.png') no-repeat;
     background-size: contain;
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
   }
-  #needle {
+  .needle {
     width: 10px;
     height: 100px;
     background-color: red;
@@ -26,8 +34,22 @@
 </head>
 <body>
 
-<div id="compass">
-  <div id="needle"></div>
+<div class="compass-container">
+  <div class="compass" id="compass1">
+    <div class="needle" id="needle1"></div>
+  </div>
+</div>
+
+<div class="compass-container">
+  <div class="compass" id="compass2">
+    <div class="needle" id="needle2"></div>
+  </div>
+</div>
+
+<div class="compass-container">
+  <div class="compass" id="compass3">
+    <div class="needle" id="needle3"></div>
+  </div>
 </div>
 
 <div id="message"></div>
@@ -47,8 +69,12 @@
     { latitude: centerLatitude, longitude: centerLongitude - (checkpointOffset * 3) }
   ];
 
-  // Needle element
-  const needle = document.getElementById('needle');
+  // Needle elements
+  const needles = [
+    document.getElementById('needle1'),
+    document.getElementById('needle2'),
+    document.getElementById('needle3')
+  ];
 
   // Message element
   const message = document.getElementById('message');
@@ -71,7 +97,7 @@
   }
 
   // Function to update needle direction
-  function updateCompass(heading) {
+  function updateCompass(needle, heading) {
     needle.style.transform = `rotate(${heading}deg)`;
   }
 
@@ -108,6 +134,16 @@
 
   // Get user's current location
   navigator.geolocation.watchPosition(updateUserLocation, locationError);
+
+  // Function to update compass and check checkpoints on device orientation change
+  window.addEventListener('deviceorientation', function(event) {
+    const alphas = [event.alpha, event.alpha + 180, event.alpha - 180];
+    for (let i = 0; i < numCheckpoints; i++) {
+      if (alphas[i] !== null) {
+        updateCompass(needles[i], alphas[i]);
+      }
+    }
+  });
 </script>
 
 </body>
