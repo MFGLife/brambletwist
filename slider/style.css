@@ -58,19 +58,20 @@ Home Slider
 }
 
 .swiper-image-seven {
-  background-image: url(../pics/horse1.jpg);
+  background-image: url(../pics/dogwood1.webp);
+
 }
 
 .swiper-image-eight {
-  background-image: url(../pics/horse2.webp);
+  background-image: url(../pics/dogwood2.jpg);
 }
 
 .swiper-image-nine {
-  background-image: url(../pics/dogwood1.webp);
+  background-image: url(../pics/horse1.jpg);
 }
 
 .swiper-image-ten {
-  background-image: url(../pics/dogwood2.jpg);
+  background-image: url(../pics/horse2.webp);
 }
 
 .swiper-image-eleven {

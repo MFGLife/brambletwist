@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Geofencing with Compass</title>
+<style>
+  #compass {
+    width: 200px;
+    height: 200px;
+    background: url('compass.png') no-repeat;
+    background-size: contain;
+    position: relative;
+  }
+  #needle {
+    width: 10px;
+    height: 100px;
+    background-color: red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: 50% 100%;
+    transform: rotate(0deg);
+  }
+</style>
+</head>
+<body>
+
+<div id="compass">
+  <div id="needle"></div>
+</div>
+
+<div id="message"></div>
+
+<script>
+  // Geofence coordinates
+
+  const fenceLatitude = 39.09798200771945;
+  const fenceLongitude = -94.5665162390781;
+  const fenceRadius = 10; // in meters
+  
+  // Needle element
+  const needle = document.getElementById('needle');
+
+  // Message element
+  const message = document.getElementById('message');
+
+  // Function to calculate distance between two points (in meters)
+  function calculateDistance(lat1, lon1, lat2, lon2) {
+    const R = 6371e3; // Radius of the Earth in meters
+    const φ1 = lat1 * Math.PI / 180; // φ, λ in radians
+    const φ2 = lat2 * Math.PI / 180;
+    const Δφ = (lat2-lat1) * Math.PI / 180;
+    const Δλ = (lon2-lon1) * Math.PI / 180;
+
+    const a = Math.sin(Δφ/2) * Math.sin(Δφ/2) +
+              Math.cos(φ1) * Math.cos(φ2) *
+              Math.sin(Δλ/2) * Math.sin(Δλ/2);
+    const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+
+    const d = R * c; // Distance in meters
+    return d;
+  }
+
+  // Function to update needle direction
+  function updateCompass(heading) {
+    needle.style.transform = `rotate(${heading}deg)`;
+  }
+
+  // Function to check if the user is inside the geofence
+  function checkGeofence(latitude, longitude) {
+    const distance = calculateDistance(latitude, longitude, fenceLatitude, fenceLongitude);
+    if (distance < fenceRadius) {
+      message.textContent = "You win!";
+    } else if (distance < (fenceRadius * 2)) {
+      message.textContent = "You're close!";
+    } else {
+      message.textContent = "";
+    }
+  }
+
+  // Function to update compass and check geofence on device orientation change
+  window.addEventListener('deviceorientation', function(event) {
+    const alpha = event.alpha; // Compass heading in degrees
+    if (alpha !== null) {
+      updateCompass(alpha);
+    }
+  });
+
+  // Function to update user location and check geofence
+  function updateUserLocation(position) {
+    const latitude = position.coords.latitude;
+    const longitude = position.coords.longitude;
+    checkGeofence(latitude, longitude);
+  }
+
+  // Function to handle location error
+  function locationError(error) {
+    console.log('Error getting location:', error);
+  }
+
+  // Get user's current location
+  navigator.geolocation.watchPosition(updateUserLocation, locationError);
+</script>
+
+</body>
+</html>
