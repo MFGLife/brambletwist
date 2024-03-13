@@ -1,14 +1,10 @@
-
-const targetY = window.scrollY + 2600;
-let currentY = window.scrollY;
-
-function scrollAnimation() {
-  if (currentY < targetY) {
-    currentY += Math.min(targetY - currentY, 20); // Scroll in increments of 20px for smoother animation
-    window.scrollTo(0, currentY);
-    requestAnimationFrame(scrollAnimation);
+function scrollToElement(id) {
+  const element = document.getElementById(id);
+  if (element) {
+    element.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
 }
+
    
 
 document.querySelector('#btnGiveCommand').addEventListener('click', function(){

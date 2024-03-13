@@ -23,12 +23,12 @@ body, html {
   background-size: cover;
 }
 .bg-1 {
-  background-image: url("pics/snack.png");
+  background-image: url("pics/wall2.jpg");
   min-height: 70%;
 }
 
 .bg-2 {
-  background-image: url("pics/wall2.jpg");
+  background-image: url("pics/snack.png");
   min-height: 80%;
 }
 
@@ -38,7 +38,7 @@ body, html {
 
 .bg-4 {
   background-image: url("pics/wall3.webp");
-  min-height: 30%;
+  min-height: 60%;
 }
 
 .caption {
@@ -268,4 +268,22 @@ path.two {
   .snack-item {
     width: 50%; /* Change width for larger devices */
   }
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h1 {
+  text-align: center;
+  color: #4CAF50;
+}
+.signature {
+  text-align: right;
+  font-style: italic;
+  margin-top: 20px;
 }
