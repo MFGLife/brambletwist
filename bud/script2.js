@@ -28,33 +28,17 @@ function loadPlayerJson() {
         }
 
         var jokes = [
-            "Why did the marijuana plant go to therapy? It had too many high thoughts.",
-            "What do you call a stoned gardener? A pot-plant-er.",
-            "Why don't plants play hide and seek with marijuana plants? Because they always get found in the pot.",
-            "What's a marijuana plant's favorite movie? The Lord of the Rings: The Two Tokes.",
-            "Why did the marijuana plant fail the job interview? It couldn't stop talking about its pot-ential.",
-            "How does a marijuana plant party? It turns up the weed and hits the dance floor.",
-            "What's a marijuana plant's favorite snack? Weedies!",
-            "Why did the marijuana plant always get invited to parties? It was a real hit!",
-        "What's a stoner's favorite type of footwear? High heels!",
-        "Why did the marijuana plant break up with its girlfriend? It just couldn't commit to a pot-ential relationship.",
-        "What do you call a group of stoners stuck on a deserted island? The High-larious Five!",
-        "How do marijuana plants make friends? They just leaf a good impression!",
-        "What's a marijuana plant's favorite game? Weedopoly!",
-        "Why did the marijuana plant get promoted? It was outstanding in its field!",
-        "What's a stoner's favorite board game? Ganja-grams!",
-        "Why did the marijuana plant become a lawyer? It had a high degree of success!",
-        "What do you call a marijuana plant with a law degree? A high-functioning attorney!",
-        "Why was the marijuana plant so good at math? It was always multiplying!",
-        "How did the marijuana plant win the race? It took a shortcut through the pot-hole!",
-        "What do you call a marijuana plant with a broken leg? A pot-cast!",
-        "Why did the marijuana plant go to space? It wanted to be a little higher!",
-        "What's a marijuana plant's favorite subject in school? History, because it's rooted in the past!",
-        "Why did the marijuana plant go to the bar? It heard they had a great pot-stirrer!",
-        "What's a marijuana plant's favorite type of music? Rock 'n' Roll-ups!",
-        "Why did the marijuana plant become a comedian? It had a lot of good pot-laughs!",
-        "What's a marijuana plant's favorite TV show? Breaking Bud!",
-        "Why did the marijuana plant go to the gym? It wanted to get ripped!"
+           
+"Why did the tomato plant blush? Because it saw the salad dressing!",
+"How do trees access the internet? They log in!",
+"Why was the plant such a great detective? Because it always cracked the case wide open!",
+"What did the flower say after it told a joke? I'm rooting for laughter!",
+"Why did the scarecrow win an award? Because he was outstanding in his field!",
+"What's a plant's favorite type of music? Root rock!",
+"Why did the gardener plant a light bulb? Because he wanted to grow a power plant!",
+"How do plants communicate? They send each other seeds of messages!",
+"Why was the cucumber mad? Because it was in a pickle!",
+"What do you call a plant that knows Kung Fu? Bruce Weed!"
         ];
 
         var randomJoke = jokes[Math.floor(Math.random() * jokes.length)];
