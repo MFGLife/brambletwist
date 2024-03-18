@@ -18,9 +18,7 @@
 
         async function setupCamera() {
             try {
-                const stream = await navigator.mediaDevices.getUserMedia({
-                    video: { facingMode: 'environment' } // Use the back camera
-                });
+                const stream = await navigator.mediaDevices.getUserMedia({ video: { facingMode: 'environment' } });
                 video.srcObject = stream;
             } catch (err) {
                 console.error('Error accessing the camera:', err);
@@ -29,7 +27,10 @@
 
         function captureImage() {
             const context = canvas.getContext('2d');
-            context.drawImage(video, 0, 0, canvas.width, canvas.height);
+            // Set canvas size to match video element
+            canvas.width = video.videoWidth;
+            canvas.height = video.videoHeight;
+            context.drawImage(video, 0, 0);
             const imageData = canvas.toDataURL('image/jpeg');
             // Save the image locally
             saveImageLocally(imageData);
