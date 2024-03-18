@@ -18,7 +18,9 @@
 
         async function setupCamera() {
             try {
-                const stream = await navigator.mediaDevices.getUserMedia({ video: true });
+                const stream = await navigator.mediaDevices.getUserMedia({
+                    video: { facingMode: 'environment' } // Use the back camera
+                });
                 video.srcObject = stream;
             } catch (err) {
                 console.error('Error accessing the camera:', err);
