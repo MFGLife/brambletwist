@@ -389,3 +389,14 @@ button::before {
     transform: translate(0, 10%);
   }
 }
+
+@media (max-width: 800px) {
+  .copy {
+    font-size: 0.75rem; /* Decrease font size by 50% */
+  }
+  .shrunk-font {
+    font-size: 0.75rem;
+  }
+  
+}
+
