@@ -1,4 +1,3 @@
-/* Inspiration - Jetro Taiwo - https://dribbble.com/shots/5272684-Concept-BoConcept-Mobile-App */
 
 * {
     box-sizing: border-box;
@@ -16,14 +15,14 @@ body {
 .landingPage {
     width: 100vw;
     height: 100vh;
-    background: url('https://i.postimg.cc/VN9yK5pf/landing-bg.jpg');
+    background: url('../pics/moss1.webp');
     background-size: cover;
     background-position: center center;
 }
 
 @media (max-width: 768px) {
     .landingPage {
-        background: url('https://i.postimg.cc/sgSb2vVY/mobile-landing-bg.jpg');
+        background: url('../pics/moss1.webp');
         background-size: cover;
     }
 }
