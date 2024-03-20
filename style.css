@@ -400,3 +400,26 @@ button::before {
   
 }
 
+form {
+  font: 600;
+  color: #fff;
+  display: inline-block;
+  text-align: left;
+}
+
+input[type="text"], input[type="email"], select {
+  font-size: 1em;
+  padding: 0.5em;
+  margin-bottom: 1em;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  font-size: 1em;
+  padding: 0.5em 1em;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}

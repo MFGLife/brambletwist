@@ -43,15 +43,65 @@
   <section class="block section-intro">
     <div class="item-parallax-content flex-container">
       <div class="centered-content">
-        <h2 class="head-small head-centered">Air Quality Index (AQI)</h2>
-        <p class="copy copy-white">
-          The AQI is a standardized measurement used by environmental agencies to communicate air quality to the public. It takes into account various pollutants, including ozone, particulate matter (PM2.5 and PM10), carbon monoxide, sulfur dioxide, and nitrogen dioxide, and assigns a numerical value representing the level of pollution.
-        </p>
-        <p class="copy copy-white">
-          Monitoring stations throughout the city measure these pollutants, and the data is used to calculate the AQI. Residents can check the AQI with these tools:<br>
-          <button onclick="window.open('https://map.purpleair.com/1/mAQI/a10/p604800/cC0#11.9/39.09027/-94.62623')">Map</button><button onclick="window.open('https://www.airnow.gov/')">Zip Code</button>
-        
-        </p>
+        <h2 class="head-small head-centered">Breathe Better Pledge</h2>
+        <form onsubmit="return sendEmail()" style="margin: 20px;">
+          <label for="name">Name / Company Name:</label>
+          <input type="text" id="name" name="name" required><br><br>
+          <p class="copy copy-white" id="pledge-text" style="display: none;">
+              Dear <span id="reader-name"></span>,<br><br>
+              Thank you for joining us in the Bramble Twist Pledge. Together, we can make a real difference in improving air quality in Kansas City, MO.<br><br>
+              We understand the importance of businesses like <span id="company-name-placeholder"></span> in our community. By taking action, you're not only enhancing your own operations but also contributing to a healthier environment for everyone.<br><br>
+              Please select your preferred solution below to complete your pledge.
+          </p>
+          <div id="solution-section" style="display: none;">
+              <label for="solution">Choose a Solution:</label>
+              <select id="solution" required>
+                  <option value="">-- Select an Option --</option>
+                  <option value="Moss Filtration">Moss Filtration</option>
+                  <option value="Charcoal Filtration">Charcoal Filtration</option>
+                  <option value="Bud AI Technology">Bud AI Technology</option>
+                  <option value="Not Participating">I wish to not participate</option>
+              </select><br><br>
+          </div>
+      </form>
+      
+      <script>
+          const nameInput = document.getElementById("name");
+          const pledgeText = document.getElementById("pledge-text");
+          const solutionSection = document.getElementById("solution-section");
+          const solutionSelect = document.getElementById("solution");
+          const readerNameSpan = document.getElementById("reader-name");
+          const companyNameSpan = document.getElementById("company-name-placeholder");
+      
+          nameInput.addEventListener("input", () => {
+              const name = nameInput.value.trim();
+              if (name) {
+                  readerNameSpan.textContent = name;
+                  companyNameSpan.textContent = name;
+                  pledgeText.style.display = "block";
+                  solutionSection.style.display = "block";
+              } else {
+                  pledgeText.style.display = "none";
+                  solutionSection.style.display = "none";
+              }
+          });
+      
+          function sendEmail(event) {
+              event.preventDefault();
+              const name = nameInput.value.trim();
+              const solution = solutionSelect.value;
+              if (!name || solution === "") return;
+      
+              const body = `Name: ${name}%0D%0ACompany/Business Name: ${name}%0D%0AChosen Solution: ${solution}`;
+              const mailtoLink = `mailto:brambletwist@gmail.com?subject=The%20BrambleTwist%20Pledge&body=${body}`;
+              window.location.href = mailtoLink;
+          }
+      
+          solutionSelect.addEventListener("change", sendEmail);
+          document.querySelector("form").addEventListener("submit", sendEmail);
+      </script>
+               
+       
       </div>
     </div>
   </section>
