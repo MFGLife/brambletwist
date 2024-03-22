@@ -23,3 +23,20 @@ const updateProps = () => {
 
 updateProps();
 updateOffset();
+
+var currentFrame = 1;
+var totalFrames = 3; // Change this to the total number of frames you have
+
+function itemChange() {
+    // Get the iframe element
+    var iframe = document.getElementById('auctionFrame');
+
+    // Increment the current frame number
+    currentFrame = (currentFrame % totalFrames) + 1;
+
+    // Construct the new source URL
+    var newSrc = 'auction/' + currentFrame + '.html';
+
+    // Set the new source URL
+    iframe.src = newSrc;
+}
