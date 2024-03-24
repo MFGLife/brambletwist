@@ -40,15 +40,3 @@ function itemChange() {
     // Set the new source URL
     iframe.src = newSrc;
 }
-
-function spawnHashtags() {
-  var container = document.getElementById("hashtag-buttons");
-  document.getElementById('explore').style.display = 'none';
-  document.getElementById('exploretext').style.display = 'none';
-
-  container.innerHTML = `
-    <button onclick="window.open('blog/antilawn.html')"> #AntiLawn </button>
-    <button onclick="window.open('blog/nomowmay.html')"> #NoMowMay </button>
-    <button onclick="window.open('blog/edible.html')"> #EdibleLawn </button>
-  `;
-}
