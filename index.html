@@ -23,14 +23,16 @@
 
 <body>
  
-<button style="position: absolute; bottom: 20px; right: 20px; z-index: 999;" onclick="window.open('cart/index.html')">Shop</button>
+  <div class="search-container">
+    <form action="/search" method="get">
+      <input type="text" id="search" name="q" placeholder="Search our blog...">
+    </form>
+    <button id="shop-button" onclick="window.open('cart/index.html')">Shop</button>
+  </div>
+ 
+ 
 
 
- <!-- <img style="position: absolute; bottom: 20px; right: 20px; width: 50px; height: 50px; z-index: 999;" src="pics/pretzel.png" onclick="window.open('https://www.doordash.com/store/bramble-twist-llc-kansas-city-28016940/?event_type=autocomplete&pickup=false')"> -->
-  <form action="/search" method="get">
-     <input type="text" id="search" name="q" placeholder="Enter your search query...">
-    <button type="submit" class="search-button">Search</button> <!-- Added the class "search-button" -->
-</form>
 <div id="keyword-list"></div>
 
 

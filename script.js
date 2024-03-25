@@ -92,6 +92,7 @@ document.getElementById('search').addEventListener('input', function() {
   sortedCases.forEach(function(caseKey) {
       if (matchingCounts[caseKey] > 0) {
           var button = document.createElement('button');
+          button.className = 'blog-button';
           button.textContent = caseKey + ' (' + matchingCounts[caseKey] + ')';
           button.onclick = function() {
               // Redirect to corresponding blog based on caseKey
