@@ -50,5 +50,7 @@ function spawnHashtags() {
     <button onclick="window.open('blog/antilawn.html')"> #AntiLawn </button>
     <button onclick="window.open('blog/nomowmay.html')"> #NoMowMay </button>
     <button onclick="window.open('blog/edible.html')"> #EdibleLawn </button>
+    <button onclick="window.open('blog/breathebetter.html')"> #BreatheBetter </button>
+
   `;
 }
