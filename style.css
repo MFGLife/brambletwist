@@ -1,7 +1,6 @@
 *, *:before, *:after {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 html, body {
@@ -284,7 +283,7 @@ html {
 :root {
   --text-color: hsla(210, 50%, 85%, 1);
   --shadow-color: hsla(210, 40%, 52%, .4);
-  --btn-color: hsl(186, 94%, 31%);
+  --btn-color: #054950;
   --bg-color: #141218;
 }
 
@@ -418,7 +417,6 @@ input[type="text"], input[type="email"], select {
 input[type="submit"] {
   font-size: 1em;
   padding: 0.5em 1em;
-  background-color: #4CAF50;
   color: #fff;
   border: none;
   cursor: pointer;
@@ -428,4 +426,38 @@ input[type="submit"] {
 
   font-size: 0.8em;
 
+}
+
+  /* Style for the form */
+  form {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    z-index: 999;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* Style for the input field */
+input[type="text"] {
+    width: 300px; /* Set the width to 300 pixels */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Style for the search button */
+.search-button {
+    padding: 4px 6px;
+    font-size: 16px;
+    background-color: #054950;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Optional: Style for the label */
+label {
+    margin-right: 10px;
 }

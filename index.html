@@ -22,10 +22,17 @@
 </head>
 
 <body>
+ 
+<button style="position: absolute; bottom: 20px; right: 20px; z-index: 999;" onclick="window.open('cart/index.html')">Shop</button>
 
-<div>
-  <img style="position: absolute; bottom: 20px; right: 20px; width: 50px; height: 50px; z-index: 999;" src="pics/pretzel.png" onclick="window.open('https://www.doordash.com/store/bramble-twist-llc-kansas-city-28016940/?event_type=autocomplete&pickup=false')">
-</div>
+
+ <!-- <img style="position: absolute; bottom: 20px; right: 20px; width: 50px; height: 50px; z-index: 999;" src="pics/pretzel.png" onclick="window.open('https://www.doordash.com/store/bramble-twist-llc-kansas-city-28016940/?event_type=autocomplete&pickup=false')"> -->
+  <form action="/search" method="get">
+     <input type="text" id="search" name="q" placeholder="Enter your search query...">
+    <button type="submit" class="search-button">Search</button> <!-- Added the class "search-button" -->
+</form>
+<div id="keyword-list"></div>
+
 
   <main class="content js-content">
   
@@ -35,9 +42,8 @@
     </figure>
     <div class="item-parallax-content flex-container">
       <div class="landing-content centered-content">
-        <h1 class="head-large">Breathe Better</h1>
-        <p class="copy2 copy-white2">with Bramble Twist</p>
-        <button onclick="window.open('cart/index.html')">Shop Now</button>
+        <h1 class="head-large">Bramble Twist</h1>
+        <button id="pretzelcounter" onclick="scrollDown()"></button>
       </div>
     </div>
   </section>
@@ -122,25 +128,26 @@
   <section class="block">
     <div class="item-parallax-content flex-container img-grid">
       <figure class="img-gridItem type-right">
-        <img src="pics/office.webp" alt="Office Plantscape" />
+        <img src="pics/pretwall.jpg" alt="Office Plantscape" />
         <figcaption class="img-caption">
-          <h2 class="head-small">Free Soul</h2>
+          <h2 class="head-small">Feed Soul</h2>
           <p id="exploretext" class="copy copy-white">
-            Our goal is to provide you with an easy and effective solution for enhancing the ambiance and energy of your corporate environment, ensuring that your workspace is not only visually stunning but also conducive to productivity and employee well-being. <br>
+            Craving a delicious twist? Indulge in our irresistible pretzels while supporting a greener Kansas City. Every bite contributes to #BreatheBetter, an initiative bringing fresh air and mental wellness through innovative plantscaping. Savor the flavor, breathe easier, and be a part of this tasty movement towards a more vibrant community.
+            <br>
           </p>
           <div id="hashtag-buttons"></div>
-          <button id="explore" class="shrunk-font" onclick="spawnHashtags()">Explore Hashtags</button>          
+          <button id="explore" class="shrunk-font" onclick="window.open('https://www.doordash.com/store/bramble-twist-llc-kansas-city-28016940/?event_type=autocomplete&pickup=false')">Get Yours</button>          
 
         </figcaption>
       </figure>
       <figure class="img-gridItem type-left">
         <img src="pics/crycella.jpg" alt="Crycella Freitag" />
         <figcaption class="img-caption">
-          <h2 class="head-small">Free Mind</h2>
+          <h2 class="head-small">Feed Mind</h2>
           <p class="copy copy-white">
-            Our expert team will curate a tailored plantscape design that incorporates a diverse selection of indoor plants, including invigorating citrus trees, refreshing mint varieties, and aromatic herbs, strategically placed to maximize visual appeal and promote a sense of tranquility.
+            Kansas City residents, join #BreatheBetter - enhancing air quality and mental wellness through plantscaping. Discover innovative ways to incorporate greenery into urban spaces, creating oxygen-rich oases. Follow our movement for expert insights, practical tips, and a greener, more rejuvenating future in the KC metro area.
           </p>
-          <button class="shrunk-font" onclick="window.open('cart/index.html')">Our shop</button>
+          <button class="shrunk-font" onclick="window.open('blog/breathebetter.html')">#BreatheBetter</button>
         </figcaption>
       </figure>
     </div>
