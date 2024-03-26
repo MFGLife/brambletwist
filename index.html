@@ -24,15 +24,14 @@
 <body>
  
   <div class="search-container">
-    <form action="/search" method="get">
-      <input type="text" id="search" name="q" placeholder="Search our blog...">
-    </form>
     <button id="shop-button" onclick="window.open('cart/index.html')">Shop</button>
   </div>
  
  
 
-
+  <div class="container2">
+    <div id="word-container2"></div>
+  </div>
 <div id="keyword-list"></div>
 
 
@@ -45,7 +44,9 @@
     <div class="item-parallax-content flex-container">
       <div class="landing-content centered-content">
         <h1 class="head-large">Bramble Twist</h1>
-        <button id="pretzelcounter" onclick="scrollDown()"></button>
+        <form action="/search" method="get">
+          <input type="text" id="search" name="q" placeholder="Search our blog...">
+        </form>
       </div>
     </div>
   </section>
@@ -136,6 +137,7 @@
           <p id="exploretext" class="copy copy-white">
             Craving a delicious twist? Indulge in our irresistible pretzels while supporting a greener Kansas City. Every bite contributes to #BreatheBetter, an initiative bringing fresh air and mental wellness through innovative plantscaping. Savor the flavor, breathe easier, and be a part of this tasty movement towards a more vibrant community.
             <br>
+            <font style="color: yellowgreen;" id="pretzelcounter"></font>
           </p>
           <div id="hashtag-buttons"></div>
           <button id="explore" class="shrunk-font" onclick="window.open('https://www.doordash.com/store/bramble-twist-llc-kansas-city-28016940/?event_type=autocomplete&pickup=false')">Get Yours</button>          
@@ -157,13 +159,13 @@
   
   <section class="block section-end">
     <figure class="item-parallax-media">
-      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/46992/noah-silliman-141979.jpg" alt="" />
+      <img src="pics/nomow.webp" alt="#NoMowMay" />
     </figure>
     <div class="item-parallax-content flex-container">
       <div class="landing-content centered-content">
-<h1 class="head-large">Auction</h1>
-        
-<iframe id="auctionFrame" src="auction/1.html" style="border: none;" width="350px" height="500px"></iframe>
+<h1 class="head-large">Resistance Products</h1>
+
+<iframe id="auctionFrame" src="auction/3.html" style="border: none;" width="350px" height="500px"></iframe>
 <button onclick="itemChange()">Next Item</button>
 
       </div>
@@ -171,7 +173,7 @@
   </section>
   
   <section class="custom-properties-ftw">
-    <p class="copy copy-white">Phone: 785.214.9030 | Brambletwist@gmail.com <br> 1311c East 13th Street, KCMO 64106</p><hr>6
+    <p class="copy copy-white">Phone: 785.214.9030 | Brambletwist@gmail.com <br> 1311c East 13th Street, KCMO 64106</p><hr>
   </section>
 </main>
 <!-- partial -->

@@ -24,8 +24,8 @@ const updateProps = () => {
 updateProps();
 updateOffset();
 
-var currentFrame = 1;
-var totalFrames = 3; // Change this to the total number of frames you have
+var currentFrame = 3;
+var totalFrames = 5; // Change this to the total number of frames you have
 
 function itemChange() {
     // Get the iframe element
@@ -61,10 +61,10 @@ document.getElementById('search').addEventListener('input', function() {
 
   // Arrays containing keywords for each case
   var possibleKeywords = {
-      '#AntiLawn': ['Sustainable','landscaping','practices','Reduce','carbon','emissions','Eco-friendly','business','Kansas','City','businesses','Anti-lawn','movement','benefits','Environmental','impact','of','traditional','lawns','Green','solutions','Carbon','footprint','reduction','tips','Native','flora','in','Eco-conscious','commercial','properties','Urban','sustainability','initiatives','office','park','environmental','stewardship','lawn','care','complexes','ideas','Natural','growth','maintenance','companies','Climate-friendly','techniques','Greener','plants','for','management','landscapes','trends','products','case','studies','Environmentally','responsible','space','development','design','principles','infrastructure','grasses','offsetting','through','alternatives','certification','architecture','building'],
-      '#NoMowMay': ['lawn', 'no mow', 'may', 'wildflowers', 'biodiversity', 'conservation', 'habitat', 'pollinators', 'bees', 'native', 'growing', 'movement', 'towards', 'climate-conscious', 'lawns', 'spring', 'gardening', 'season', 'homeowners', 'lawn', 'care', 'No', 'Mow', 'Low', 'campaigns', 'bees', 'butterflies', 'neighbors', 'Homeowner', 'associations', 'brown', 'wild', 'court', 'Democratic', 'lawmakers', 'regulations', 'green', 'California', 'gas-powered', 'mowers', 'leaf', 'blowers', 'Towns', 'No', 'May', 'grass', 'citations', 'Yard', 'sign', 'wars', 'country', 'turf', 'political', 'displays', 'election', 'battleground'],
-      '#EdibleLawn': ['lawn', 'edible', 'gardening', 'vegetables', 'permaculture', 'food', 'harvest', 'nutrition', 'sustainability', 'self-sufficiency', 'Growing', 'food', 'not', 'grass', 'Exploring', 'the', 'principles', 'of', 'permaculture', 'Permanent', 'Agriculture', 'sustainable', 'living', 'environmental', 'consciousness', 'sustainable', 'design', 'ecological', 'design', 'productive', 'ecosystems', 'organic', 'gardening', 'agroforestry', 'food', 'forests', 'diverse', 'plant', 'species', 'fruit', 'nut', 'trees', 'natural', 'ecosystems', 'environmental', 'resilience', 'collaboration', 'with', 'nature', 'self-sustaining', 'systems', 'ecological', 'ethics', 'Earth', 'Care', 'People', 'Care', 'Fair', 'Share', 'sustainable', 'living', 'regenerative', 'design', 'holistic', 'coexistence', 'environmental', 'challenges', 'thriving', 'ecosystems'],
-      '#BreatheBetter': ['air quality', 'pollution', 'breathe', 'health', 'respiratory', 'wellness', 'exercise', 'clean air', 'lung', 'oxygen', 'PRIORITIZING', 'AIR', 'QUALITY', 'IN', 'AN', 'INDUSTRIALIZED', 'METROPOLITAN', 'Kansas', 'City', 'urban', 'development', 'sustainable', 'growth', 'native', 'greenery', 'improving', 'pollution', 'renewable', 'energy', 'eco-friendly', 'manufacturing', 'indigenous', 'plants', 'landscaping', 'air', 'pollution', 'noxious', 'particulates', 'greenhouse', 'gasses', 'volatile', 'organic', 'compounds', 'public', 'health', 'environment', 'concrete', 'jungle', 'nature', 'Native', 'Plants', 'Air', 'Purifiers', 'Indigenous', 'plants', 'climate']
+      '#AntiLawn': ['#AntiLawn','Sustainable','landscaping','practices','Reduce','carbon','emissions','Eco-friendly','business','Kansas','City','businesses','Anti-lawn','movement','benefits','Environmental','impact','of','traditional','lawn','Green','solutions','Carbon','footprint','reduction','tips','Native','flora','in','Eco-conscious','commercial','properties','Urban','sustainability','initiatives','office','park','environmental','stewardship','lawn','care','complexes','ideas','Natural','growth','maintenance','companies','Climate-friendly','techniques','Greener','plants','for','management','landscapes','trends','products','case','studies','Environmentally','responsible','space','development','design','principles','infrastructure','grasses','offsetting','through','alternatives','certification','architecture','building', 'yard'],
+      '#NoMowMay': ['#NoMowMay','lawn', 'no mow', 'may', 'wildflowers', 'biodiversity', 'conservation', 'habitat', 'pollinators', 'bees', 'native', 'growing', 'movement', 'towards', 'climate-conscious', 'lawns', 'spring', 'gardening', 'season', 'homeowners', 'lawn', 'care', 'No', 'Mow', 'Low', 'campaigns', 'bees', 'butterflies', 'neighbors', 'Homeowner', 'associations', 'brown', 'wild', 'court', 'Democratic', 'lawmakers', 'regulations', 'green', 'California', 'gas-powered', 'mowers', 'leaf', 'blowers', 'Towns', 'No', 'May', 'grass', 'citations', 'Yard', 'sign', 'wars', 'country', 'turf', 'political', 'displays', 'election', 'battleground', 'yard'],
+      '#EdibleLawn': ['#EdibleLawn','lawn', 'edible', 'gardening', 'vegetables', 'permaculture', 'food', 'harvest', 'nutrition', 'sustainability', 'self-sufficiency', 'Growing', 'food', 'not', 'grass', 'Exploring', 'the', 'principles', 'of', 'permaculture', 'Permanent', 'Agriculture', 'sustainable', 'living', 'environmental', 'consciousness', 'sustainable', 'design', 'ecological', 'design', 'productive', 'ecosystems', 'organic', 'gardening', 'agroforestry', 'food', 'forests', 'diverse', 'plant', 'species', 'fruit', 'nut', 'trees', 'natural', 'ecosystems', 'environmental', 'resilience', 'collaboration', 'with', 'nature', 'self-sustaining', 'systems', 'ecological', 'ethics', 'Earth', 'Care', 'People', 'Care', 'Fair', 'Share', 'sustainable', 'living', 'regenerative', 'design', 'holistic', 'coexistence', 'environmental', 'challenges', 'thriving', 'ecosystems', 'yard'],
+      '#BreatheBetter': ['#BreatheBetter','air quality', 'pollution', 'breathe', 'health', 'respiratory', 'wellness', 'exercise', 'clean air', 'lung', 'oxygen', 'PRIORITIZING', 'AIR', 'QUALITY', 'IN', 'AN', 'INDUSTRIALIZED', 'METROPOLITAN', 'Kansas', 'City', 'urban', 'development', 'sustainable', 'growth', 'native', 'greenery', 'improving', 'pollution', 'renewable', 'energy', 'eco-friendly', 'manufacturing', 'indigenous', 'plants', 'landscaping', 'air', 'pollution', 'noxious', 'particulates', 'greenhouse', 'gasses', 'volatile', 'organic', 'compounds', 'public', 'health', 'environment', 'concrete', 'jungle', 'nature', 'Native', 'Plants', 'Air', 'Purifiers', 'Indigenous', 'plants', 'climate']
   };
 
   // Count matching keywords for each case
@@ -120,14 +120,13 @@ document.getElementById('search').addEventListener('input', function() {
 
 // Function to count pretzels
 function countPretzels() {
-  var count = 900;
+  var count = 0;
   var targetCount = 1765;
-  var interval = 0.002;
+  var interval = 20;
 
   var timer = setInterval(function() {
       count++;
-      document.getElementById('pretzelcounter').innerHTML = "Pretzels Enjoyed: " + count;
-      console.log("Pretzels counted: " + count);
+      document.getElementById('pretzelcounter').innerHTML = "Pretzels Made: " + count;
       if (count >= targetCount) {
           clearInterval(timer);
       }
@@ -145,3 +144,38 @@ function scrollDown() {
     behavior: 'smooth' // Optionally, add smooth scrolling behavior
   });
 }
+
+
+
+
+
+
+const words = ['#SaveTheBees', 'sod-free', 'eco-rebel', '#TurfWar', 'grass-roots', 'nature-first', 'lawn-defiant', 'bio-diverse', 'green-future', 'planet-friendly', 'lawn-liberation', 'turf-resistance', 'yard-revolution', 'no-mow', 'native-nurture', 'permaculture-proud', '#AntiLawn', '#BreatheBetter', 'NoMowMay'];
+
+function createWord() {
+  const word = document.createElement('div');
+  word.classList.add('word');
+  word.innerText = words[Math.floor(Math.random() * words.length)];
+  
+  const startPosition = Math.random() * window.innerWidth;
+  word.style.left = startPosition + 'px';
+
+  const speed = Math.random() * 4 + 1; // Adjust the range for desired speed
+  let currentPosition = 0;
+
+  const fallInterval = setInterval(() => {
+    if (currentPosition < 900) {
+      currentPosition += speed;
+      word.style.top = currentPosition + 'px';
+      const opacity = 0.6 - (currentPosition / 900);
+      word.style.opacity = opacity;
+    } else {
+      clearInterval(fallInterval);
+      word.remove();
+    }
+  }, 50); // Adjust interval for smoothness
+
+  document.getElementById('word-container2').appendChild(word);
+}
+
+setInterval(createWord, 4000); // Adjust interval for new words
