@@ -52,24 +52,37 @@
   </section>
   
   <section class="block section-intro">
-    <div class="item-parallax-content flex-container">
-      <div class="centered-content">
-        <h2 class="head-small head-centered">pH Balanced Live Soil<br><br>
 
-Introducing the pinnacle of soil health: our Live Soil Blend, meticulously crafted for Kansas City's unique landscapes. Enriched with beneficial microbes and organic nutrients, it fosters vibrant plant growth while revitalizing depleted soils. 
-       Landscapers, elevate your projects with soil that thrives and sustains.</h2>
+    <div class="item-parallax-content flex-container img-grid">
+      <figure class="img-gridItem type-left">
+        <img src="pics/crycella.jpg" alt="Crycella Freitag" />
+        <figcaption class="img-caption">
+          <h2 class="head-small">Feed Mind</h2>
+          <p class="copy copy-white">
+            Kansas City residents, join #BreatheBetter - enhancing air quality and mental wellness through plantscaping. Discover innovative ways to incorporate greenery into urban spaces, creating oxygen-rich oases. Follow our movement for expert insights, practical tips, and a greener, more rejuvenating future in the KC metro area.
+          </p>
+          <button class="shrunk-font" onclick="window.open('blog/breathebetter.html')">#BreatheBetter</button>
+        </figcaption>
+      </figure>
+      <figure class="img-gridItem type-right">
+        <img src="pics/pretwall.jpg" alt="Office Plantscape" />
+        <figcaption class="img-caption">
+          <h2 class="head-small">Feed Soul</h2>
+          <p id="exploretext" class="copy copy-white">
+            Craving a delicious twist? Indulge in our irresistible pretzels while supporting a greener Kansas City. Every bite contributes to #BreatheBetter, an initiative bringing fresh air and mental wellness through innovative plantscaping. Savor the flavor, breathe easier, and be a part of this tasty movement towards a more vibrant community.
+            <br>
+            <font style="color: yellowgreen;" id="pretzelcounter"></font>
+          </p>
+          <div id="hashtag-buttons"></div>
+          <button id="explore" class="shrunk-font" onclick="window.open('https://www.doordash.com/store/bramble-twist-llc-kansas-city-28016940/?event_type=autocomplete&pickup=false')">Get Yours</button>          
 
-       <div style="font-size: 20px; color: white;" class="slider-container">
-    <label for="soil">Select gallons (1 to 250): </label>
-    <input type="range" id="soil" min="1" max="250" value="1" step="1" oninput="calculatePrice()">
-    <p id="price">Price: $3</p>
-</div>
+        </figcaption>
+      </figure>
 
-
-
-       
-      </div>
     </div>
+
+
+
   </section>
   
   <section class="block section-part">
@@ -86,29 +99,36 @@ Introducing the pinnacle of soil health: our Live Soil Blend, meticulously craft
   <section class="block">
     <div class="item-parallax-content flex-container img-grid">
       <figure class="img-gridItem type-right">
-        <img src="pics/pretwall.jpg" alt="Office Plantscape" />
+        <img src="pics/worms.jpg" alt="Office Plantscape" />
         <figcaption class="img-caption">
-          <h2 class="head-small">Feed Soul</h2>
-          <p id="exploretext" class="copy copy-white">
-            Craving a delicious twist? Indulge in our irresistible pretzels while supporting a greener Kansas City. Every bite contributes to #BreatheBetter, an initiative bringing fresh air and mental wellness through innovative plantscaping. Savor the flavor, breathe easier, and be a part of this tasty movement towards a more vibrant community.
-            <br>
-            <font style="color: yellowgreen;" id="pretzelcounter"></font>
-          </p>
-          <div id="hashtag-buttons"></div>
-          <button id="explore" class="shrunk-font" onclick="window.open('https://www.doordash.com/store/bramble-twist-llc-kansas-city-28016940/?event_type=autocomplete&pickup=false')">Get Yours</button>          
+              <h2 class="head-small">Live Soil</h2>
+      
+     <p class="copy copy-white"> Introducing the pinnacle of soil health: our Live Soil Blend, meticulously crafted for Kansas City's unique landscapes. Enriched with beneficial microbes and organic nutrients, it fosters vibrant plant growth while revitalizing depleted soils. 
+             Landscapers, elevate your projects with soil that thrives and sustains.</p>
+      
+             <div style="font-size: 20px; color: white;" class="slider-container">
+          <label for="soil">By gallons</label>
+          <input type="range" id="soil" min="1" max="250" value="1" step="1" oninput="calculatePrice()">
+          <p><font id="gallons">1</font><font id="price">$3</font></p>
+      </div>
+      <button class="shrunk-font" onclick="orderEmail()">Order Now</button>
 
         </figcaption>
       </figure>
+
+
+
       <figure class="img-gridItem type-left">
-        <img src="pics/crycella.jpg" alt="Crycella Freitag" />
+        <img src="pics/lot.jpg" alt="Live Soil" />
         <figcaption class="img-caption">
-          <h2 class="head-small">Feed Mind</h2>
+          <h2 class="head-small">Community</h2>
           <p class="copy copy-white">
-            Kansas City residents, join #BreatheBetter - enhancing air quality and mental wellness through plantscaping. Discover innovative ways to incorporate greenery into urban spaces, creating oxygen-rich oases. Follow our movement for expert insights, practical tips, and a greener, more rejuvenating future in the KC metro area.
+            We aim to transform an abandoned lot, once a hotspot for homelessness and violence, into a thriving community garden and composting site. By employing homeless individuals, we foster empowerment and provide free food while addressing local issues. Together, we reclaim the space, cultivate sustainability, and build a stronger, more compassionate community.
           </p>
-          <button class="shrunk-font" onclick="window.open('blog/breathebetter.html')">#BreatheBetter</button>
+          <button class="shrunk-font" onclick="window.open('blog/liveSoil.html')">#liveSoil</button>
         </figcaption>
       </figure>
+      
     </div>
   </section>
   
