@@ -54,64 +54,33 @@
   <section class="block section-intro">
     <div class="item-parallax-content flex-container">
       <div class="centered-content">
-        <h2 class="head-small head-centered">Breathe Better Pledge</h2>
-        <form onsubmit="return sendEmail()" style="margin: 20px;">
-          <label for="name">Name / Company Name:</label>
-          <input type="text" id="name" name="name" required><br><br>
-          <p class="copy copy-white" id="pledge-text" style="display: none;">
-              Dear <span id="reader-name"></span>,<br><br>
-              Thank you for joining us in the Bramble Twist Pledge. Together, we can make a real difference in improving air quality in Kansas City, MO.<br><br>
-              We understand the importance of businesses like <span id="company-name-placeholder"></span> in our community. By taking action, you're not only enhancing your own operations but also contributing to a healthier environment for everyone.<br><br>
-              Please select your preferred solution below to complete your pledge.
+        <h2 class="head-small head-centered">pH Balanced Live Soil</h2>
+
+           <div class="item-parallax-content flex-container img-grid">
+      <figure class="img-gridItem type-right">
+        <img src="pics/pretwall.jpg" alt="Office Plantscape" />
+        <figcaption class="img-caption">
+          <h2 class="head-small">Feed Soil</h2>
+          <p id="exploretext" class="copy copy-white">
+            Craving a delicious twist? Indulge in our irresistible pretzels while supporting a greener Kansas City. Every bite contributes to #BreatheBetter, an initiative bringing fresh air and mental wellness through innovative plantscaping. Savor the flavor, breathe easier, and be a part of this tasty movement towards a more vibrant community.
+          
           </p>
-          <div id="solution-section" style="display: none;">
-              <label for="solution">Choose a Solution:</label>
-              <select id="solution" required>
-                  <option value="">-- Select an Option --</option>
-                  <option value="Plant Filtration">Plant Filtration</option>
-                  <option value="Charcoal Filtration">Charcoal Filtration</option>
-                  <option value="Bud AI Technology">Bud AI Technology</option>
-                  <option value="Not Participating">I wish to not participate</option>
-              </select><br><br>
-          </div>
-      </form>
-      
-      <script>
-          const nameInput = document.getElementById("name");
-          const pledgeText = document.getElementById("pledge-text");
-          const solutionSection = document.getElementById("solution-section");
-          const solutionSelect = document.getElementById("solution");
-          const readerNameSpan = document.getElementById("reader-name");
-          const companyNameSpan = document.getElementById("company-name-placeholder");
-      
-          nameInput.addEventListener("input", () => {
-              const name = nameInput.value.trim();
-              if (name) {
-                  readerNameSpan.textContent = name;
-                  companyNameSpan.textContent = name;
-                  pledgeText.style.display = "block";
-                  solutionSection.style.display = "block";
-              } else {
-                  pledgeText.style.display = "none";
-                  solutionSection.style.display = "none";
-              }
-          });
-      
-          function sendEmail(event) {
-              event.preventDefault();
-              const name = nameInput.value.trim();
-              const solution = solutionSelect.value;
-              if (!name || solution === "") return;
-      
-              const body = `Name: ${name}%0D%0ACompany/Business Name: ${name}%0D%0AChosen Solution: ${solution}`;
-              const mailtoLink = `mailto:brambletwist@gmail.com?subject=The%20BrambleTwist%20Pledge&body=${body}`;
-              window.location.href = mailtoLink;
-          }
-      
-          solutionSelect.addEventListener("change", sendEmail);
-          document.querySelector("form").addEventListener("submit", sendEmail);
-      </script>
-               
+          <div id="hashtag-buttons"></div>
+          <button id="explore" class="shrunk-font" onclick="window.open('https://www.doordash.com/store/bramble-twist-llc-kansas-city-28016940/?event_type=autocomplete&pickup=false')">Get Yours</button>          
+
+        </figcaption>
+      </figure>
+      <figure class="img-gridItem type-left">
+        <img src="pics/crycella.jpg" alt="Crycella Freitag" />
+        <figcaption class="img-caption">
+          <h2 class="head-small">Feed Plants</h2>
+          <p class="copy copy-white">
+            Kansas City residents, join #BreatheBetter - enhancing air quality and mental wellness through plantscaping. Discover innovative ways to incorporate greenery into urban spaces, creating oxygen-rich oases. Follow our movement for expert insights, practical tips, and a greener, more rejuvenating future in the KC metro area.
+          </p>
+          <button class="shrunk-font" onclick="window.open('blog/breathebetter.html')">#BreatheBetter</button>
+        </figcaption>
+      </figure>
+    </div>
        
       </div>
     </div>
