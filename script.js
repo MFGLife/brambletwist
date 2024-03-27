@@ -183,11 +183,10 @@ setInterval(createWord, 4000); // Adjust interval for new words
 
 function calculatePrice() {
         var slider = document.getElementById("soil");
-        var cubicYards = slider.value;
-        var price = 120 * cubicYards;
+        var gallons = slider.value;
+        var price = 3 * gallons;
         document.getElementById("price").textContent = "Price: $" + price;
     }
 
     // Call the function initially to set the default price
     calculatePrice();
-
