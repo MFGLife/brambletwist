@@ -191,6 +191,3 @@ function calculatePrice() {
     // Call the function initially to set the default price
     calculatePrice();
 
-
-
-
