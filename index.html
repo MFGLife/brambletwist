@@ -1,158 +1,173 @@
 <!DOCTYPE html>
 <html lang="en" >
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Breathe better with Bramble Twist">
-<meta name="keywords" content="Earth Venue, Plantscape, plant. plantscape, breathe better, BreatheBetter, Kansas City, MO">
-<meta name="author" content="Bramble Twist">
-<title>Bramble Twist</title>
-<meta property="og:title" content="Bramble Twist">
-<meta property="og:description" content="Breathe better with Bramble Twist">
-<link rel="apple-touch-icon" sizes="180x180" href="pics/pretzel.png">
-<link rel="icon" type="image/png" href="pics/pretzel.png" sizes="32x32">
-<link rel="icon" type="image/png" href="pics/pretzel.png" sizes="16x16">
-<link rel="mask-icon" href="pics/pretzel.png" color="#fff">
-<link rel="shortcut icon" href="pics/pretzel.png">
-<meta property="og:image" content="pics/pretzel.png">
-<meta property="og:url" content="brambletwist.com">
-<meta property="og:type" content="website">  
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Inknut+Antiqua:600|Roboto|Roboto+Condensed:700'>
+  <meta charset="UTF-8">
+  <title>LuminaFields</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<META NAME="KEYWORDS" CONTENT="Lumina, AI, luminafields, luminafields.com, camp lumina, learning, camp, LLM, linear learning model, agi, data engineering, live action, rpg, role playing, role playing game, Data, Data School, DataSchool, DataSchools, Data Schools, School, Education, AI, Artificial Intelligence, Politics, Democrat, Republican, Conservative, Progressive">
+<META NAME="ROBOTS" CONTENT="ALL,FOLLOW">
+<meta name="description" content="Next World Learning Lounge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="apple-touch-icon" sizes="180x180" href="pics/wm.png">
+<link rel="icon" type="image/png" href="pics/wm.png" sizes="32x32">
+<link rel="icon" type="image/png" href="pics/wm.png" sizes="16x16">
+<link rel="mask-icon" href="pics/wm.png" color="#fff">
+<link rel="shortcut icon" href="pics/wm.png">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css'>
 <link rel="stylesheet" href="./style.css">
+<script src="https://cdn.jsdelivr.net/npm/three@0.115.0/build/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.115.0/examples/js/loaders/GLTFLoader.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.115.0/examples/js/controls/OrbitControls.js"></script>
+
+
 </head>
 
+
+
+
 <body>
- 
-  <div class="search-container">
-    <button id="shop-button" onclick="window.open('cart/index.html')">Shop</button>
-  </div>
- 
- 
 
-  <div class="container2">
-    <div id="word-container2"></div>
-  </div>
-<div id="keyword-list"></div>
+            
+
+    <section class="card-container" id="card-container">
 
 
-  <main class="content js-content">
-  
-  <section class="block section-landing">
-    <figure class="item-parallax-media">
-      <img src="pics/snakeplant.jpg" alt="Snake Plant" />
-    </figure>
-    <div class="item-parallax-content flex-container">
-      <div class="landing-content centered-content">
-        <h1 class="head-large">Bramble Twist</h1>
-        <form action="/search" method="get">
-          <input type="text" id="search" name="q" placeholder="Search our blog...">
+      <div class="slider">
+
+        <div class="card" data-tilt>
+          <div class="content">
+            <div style="color:white;" class="chat-window" id="chatWindow">
+            </div>
+                           
+          </div>
+        </div>
+
+        <div class="card" data-tilt>
+            <div class="content">
+              <img src="pics/blocks.jpg" alt="Connect via email" />
+              <h1>Connect via Email</h1>
+              <p>
+                Schedule an appointment or just open a dialouge with BrambleTwist today!
+                          </p>
+                          <button class="btn" onclick="sendEmail();">
+                            <span>Subscribe</span>
+                            <ion-icon name="arrow-forward-outline"></ion-icon>
+                          </button>     
+            </div>
+          </div>
+
+        
+
+        <div class="card" data-tilt>
+          <div class="content">
+            <img src="pics/ball3.jpg" alt="About Luminafields" />
+            <h1>About the Brand</h1>
+            <p>
+              Learn about every byte of what we do, connect with us or join us in development.
+            </p>
+            <button class="btn" onclick="window.open('docs.html');">
+              <span>Dive in</span>
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </button>
+          </div>
+        </div>
+
+        <div class="card" data-tilt>
+          <div class="content">
+            <img src="pics/web1.jpg" alt="Anya" />
+            <h1>Plant/Emotion Recognition</h1>
+            <p>
+              Micheal's facial and object recognition features add specialized focus and extrinsic data opportunities.
+            </p>
+            <button class="btn" onclick="window.open('https://mfglife.github.io/demo/index.html');">
+              <span>Test software</span>
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </button>
+          </div>
+        </div>
+
+        <div class="card" data-tilt>
+          <div class="content">
+            <img src="pics/ball4.jpg" alt="Anya" />
+            <h1>Image Capture Tool</h1>
+            <p>
+              Just name your file and capture 500 compressed photos at a time for optimized visual training.
+            </p>
+            <button class="btn" onclick="window.open('tools.html')">
+              <span>Camera Tool</span>
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </button>
+          </div>
+        </div>
+        
+
+        <div class="card" data-tilt>
+          <div class="content">
+            <img src="pics/micheal1.jpg" alt="Micheal Salmon" />
+            <h1>Meet the founder</h1>
+            <p>
+              Micheal L Salmon, has a vision of merging nature, technology, and education through a playful LARP experience guided by Micheal.
+            </p>
+            <button class="btn" onclick="window.open('https://linkedin.com/in/woodandmortar');">
+              <span>Get Linkedin</span>
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <ul class="control" id="custom-control">
+        <li class="prev">
+          <ion-icon class="arrow" name="caret-back-outline"></ion-icon>
+        </li>
+        <li class="next">
+          <ion-icon class="arrow" name="caret-forward-outline"></ion-icon>
+        </li>
+      </ul>
+    </section>
+
+
+    <section class="home">
+        
+        <form id="draggableForm">
+    
+          <div id="dragHandle" style="
+          width: 15px;
+          height: 15px;
+          background: yellow;
+          cursor: grab;
+          opacity: 0.7;
+          left: -20px;
+          box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5), 0 0 20px rgba(255, 255, 255, 0.7);"></div>
+      
+    
+          <input style="color:white;" class="input" type="text" id="userInput" placeholder="Moveable chat input field" oninput="checkPasscode();" onkeydown="handleKeyPress(event)">
+            <button style="display:none;">submit</button>
         </form>
-      </div>
-    </div>
-  </section>
-  
-  <section class="block section-intro">
-
-    <div class="item-parallax-content flex-container img-grid">
-      <figure class="img-gridItem type-left">
-        <img src="pics/crycella.jpg" alt="Crycella Freitag" />
-        <figcaption class="img-caption">
-          <h2 class="head-small">Feed Mind</h2>
-          <p class="copy copy-white">
-            Kansas City residents, join #BreatheBetter - enhancing air quality and mental wellness through plantscaping. Discover innovative ways to incorporate greenery into urban spaces, creating oxygen-rich oases. Follow the movement for expert insights, practical tips, and a greener, more pretzel filled future in the KC metro area. 
-            <font style="color: yellowgreen;" id="pretzelcounter"></font>
-
-          </p>
-          <button class="shrunk-font" onclick="window.open('blog/breathebetter.html')">#BreatheBetter</button>
-        </figcaption>
-      </figure>
-      <figure class="img-gridItem type-right">
-        <img src="pics/moss1.png" alt="Moss" />
-        <figcaption class="img-caption">
-          <h2 class="head-small">Feed Soul</h2>
-          <p id="exploretext" class="copy copy-white">
-            Permaculture is vital for sustainable living, fostering resilient ecosystems and communities. By mimicking nature's patterns, it promotes efficient resource use, biodiversity, and soil regeneration. Contact Crycella for free guidance on embracing permaculture principles. Start your journey towards a harmonious coexistence with nature today. Email us at info@crycella.com.            <br>
-          </p>
-          <div id="hashtag-buttons"></div>
-          <button id="explore" class="shrunk-font" onclick="window.open('cart/index.html')">Inventory</button>          
-
-        </figcaption>
-      </figure>
-
-    </div>
+    </section>
 
 
+  </body>
 
-  </section>
-  
-  <section class="block section-part">
-    <figure class="item-parallax-media">
-      <img src="pics/lemontree.jpg" alt="Lemon Tree" />
-    </figure>
-    <div class="item-parallax-content flex-container">
-      <div class="centered-content">
-        <h1 class="head-large head-centered">Wellness &<br/>Productivity</h1>
-      </div>
-    </div>
-  </section>
-  
-  <section class="block">
-    <div class="item-parallax-content flex-container img-grid">
-      <figure class="img-gridItem type-right">
-        <img src="pics/worms.jpg" alt="Office Plantscape" />
-        <figcaption class="img-caption">
-              <h2 class="head-small">Live Soil</h2>
-      
-     <p class="copy copy-white"> Introducing the pinnacle of soil health: our Live Soil Blend, meticulously crafted for Kansas City's unique landscapes. Enriched with beneficial microbes and organic nutrients, it fosters vibrant plant growth while revitalizing depleted soils. 
-             Landscapers, elevate your projects with soil that thrives and sustains.</p>
-      
-             <div style="font-size: 20px; color: white;" class="slider-container">
-          <label for="soil">By gallons</label>
-          <input type="range" id="soil" min="1" max="250" value="1" step="1" oninput="calculatePrice()">
-          <p><font id="gallons">1</font><font id="price">$3</font></p>
-      </div>
-      <button class="shrunk-font" onclick="orderEmail()">Order Now</button>
+  <div id="app"></div>
 
-        </figcaption>
-      </figure>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js'></script>
+<script src='https://unpkg.co/gsap@3/dist/gsap.min.js'></script>
+<script src='https://unpkg.com/gsap@3/dist/EasePack.min.js'></script>
+<script src='https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js'></script>
+<script src='https://unpkg.com/scrollreveal'></script>
 
+<script  src="./script.js"></script>
+<script src="./chatbot2.js"></script>
 
+<script src="./bud/basedata.js"></script>
+<script src="./bud/collective.js"></script>
+<script src="./bud/data/plants.js"></script>
 
-      <figure class="img-gridItem type-left">
-        <img src="pics/lot.jpg" alt="Live Soil" />
-        <figcaption class="img-caption">
-          <h2 class="head-small">Community</h2>
-          <p class="copy copy-white">
-            We aim to transform an abandoned lot, once a hotspot for homelessness and violence, into a thriving community garden and composting site. By employing homeless individuals, we foster empowerment and provide free food while addressing local issues. Together, we reclaim the space, cultivate sustainability, and build a stronger, more compassionate community.
-          </p>
-          <button class="shrunk-font" onclick="window.open('blog/liveSoil.html')">#liveSoil</button>
-        </figcaption>
-      </figure>
-      
-    </div>
-  </section>
-  
-  <section class="block section-end">
-    <figure class="item-parallax-media">
-      <img src="pics/nomow.webp" alt="#NoMowMay" />
-    </figure>
-    <div class="item-parallax-content flex-container">
-      <div class="landing-content centered-content">
-<h1 class="head-large">Resistance Products</h1>
-
-<iframe id="auctionFrame" src="auction/3.html" style="border: none;" width="350px" height="500px"></iframe>
-<button onclick="itemChange()">Next Item</button>
-
-      </div>
-    </div>
-  </section>
-  
-  <section class="custom-properties-ftw">
-    <p class="copy copy-white">Phone: 785.214.9030 | Brambletwist@gmail.com <br> 1311c East 13th Street, KCMO 64106</p><hr>
-  </section>
-</main>
-<!-- partial -->
-  <script  src="./script.js"></script>
+<script src="./script2.js"></script>
+<script src="./avatar.js"></script>
 
 </body>
 </html>
