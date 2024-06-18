@@ -41,8 +41,8 @@
   <main class="content js-content">
   
   <section class="block section-landing">
-    <figure class="item-parallax-media">
-      <img src="pics/snakeplant.jpg" alt="Snake Plant" />
+    <figure style="background-color: black;" class="item-parallax-media">
+      <img src="pics/snakeplant.jpg" style="opacity: .68;" alt="Snake Plant" />
     </figure>
     <div class="item-parallax-content flex-container">
       <div class="landing-content centered-content">
@@ -85,7 +85,7 @@
           <div style="font-size: 20px; color: white;" class="slider-container">
             <label for="soil">Subscription</label>
             <input type="range" id="soil" min="1" max="250" value="1" step="1" oninput="calculatePrice()">
-            <p><font id="gallons">1</font><font id="price">$3</font> /month</p>
+            <p><font id="gallons">1</font><font id="price">$3</font></p>
         </div>
           <button class="shrunk-font" onclick="orderEmail()">Get a Quote</button>
         </figcaption>
@@ -99,8 +99,8 @@
   </section>
   
   <section class="block section-part">
-    <figure class="item-parallax-media">
-      <img src="pics/bigcedar.jpg" alt="Big Cedar Lodge" />
+    <figure style="background-color: black;" class="item-parallax-media">
+      <img src="pics/bigcedar.jpg" style="opacity: .68;" alt="Big Cedar Lodge" />
     </figure>
     <div class="item-parallax-content flex-container">
       <div class="centered-content">
@@ -143,15 +143,46 @@
   </section>
   
   <section class="block section-end">
-    <figure class="item-parallax-media">
-      <img src="pics/resort.jpg" alt="tablerock lake resort" />
+    <figure style="background-color:black;" class="item-parallax-media">
+      <img src="pics/resort.jpg" style="opacity: .5;" alt="tablerock lake resort" />
     </figure>
     <div class="item-parallax-content flex-container">
       <div class="landing-content centered-content">
 <h1 class="head-large">Contact</h1>
 
-<iframe id="auctionFrame" src="auction/1.html" style="border: none; position: relative; left: -150px; bottom: 50px; z-index: 9999999999999999999999999999999999;" width="500px" height="800px"></iframe>
-
+<div class="container3s">
+  <form action="mailto:brambletwist@gmail.com?subject=Brambletwist%20Maintenance%20Request" method="post" enctype="text/plain">
+      <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+          <label for="company">Company:</label>
+          <input type="text" id="company" name="company">
+      </div>
+      <div class="form-group">
+          <label for="email">Contact Email:</label>
+          <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+          <label for="phone">Contact Phone Number:</label>
+          <input type="tel" id="phone" name="phone">
+      </div>
+      <div class="form-group">
+          <label for="issue">Issue with Property:</label>
+          <textarea id="issue" name="issue" required></textarea>
+      </div>
+      <div class="form-group checkbox-group">
+          <div class="form-group checkbox-group">
+              <label for="immediate"> Immediate attention is required</label>
+              <input type="checkbox" id="immediate" name="timeframe" value="immediate">
+          </div>            
+      </div>
+      <div class="form-group">
+          <button type="submit">Submit</button>
+      </div>
+  </form>
+</div>
       </div>
     </div>
   </section>

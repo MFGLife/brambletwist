@@ -510,3 +510,38 @@ label {
 
 
 
+    .container3 {
+      max-width: 600px;
+      margin: auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  .form-group {
+      margin-bottom: 20px;
+  }
+  .form-group label {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 5px;
+  }
+  .form-group input, .form-group textarea {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      font-size: 16px;
+  }
+  .form-group textarea {
+      height: 100px;
+  }
+  .checkbox-group {
+      margin-top: 10px;
+  }
+
+  .checkbox-group input[type="checkbox"] {
+  vertical-align: middle;
+  margin-right: 5px; /* Adjust as needed for spacing */
+}
