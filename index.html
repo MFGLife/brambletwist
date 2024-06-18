@@ -8,7 +8,7 @@
     <meta name="description" content="Expert resort maintenance services in Branson, MO. Specializing in repair, remodel, drywall, and painting.">
     <meta name="keywords" content="Resort Maintenance, Maintenance, Repair, Remodel, Drywall, Paint, Painting, Branson, MO, Branson West, Hollister, Missouri, Big Cedar">
     <meta name="author" content="Bramble Twist">
-    <title>Bramble Twist | Resort Maintenance</title>
+    <title>Bramble Twist | Resort Solutions</title>
     <meta property="og:title" content="Resort Maintenance in Branson, Missouri | Bramble Twist">
     <meta property="og:description" content="Expert resort maintenance services in Branson, MO. Specializing in repair, remodel, drywall, and painting.">
     <meta property="og:image" content="pics/logo.png">
@@ -25,18 +25,8 @@
     
 
 <body>
- 
-  <div class="search-container">
-    <button id="shop-button" onclick="window.open('cart/index.html')">Shop</button>
-  </div>
- 
- 
 
-  <div class="container2">
-    <div id="word-container2"></div>
-  </div>
-<div id="keyword-list"></div>
-
+ 
 
   <main class="content js-content">
   
@@ -47,9 +37,9 @@
     <div class="item-parallax-content flex-container">
       <div class="landing-content centered-content">
         <h1 class="head-large">Bramble Twist</h1>
-        <form action="/search" method="get">
-          <input type="text" id="search" name="q" placeholder="Search our blog...">
-        </form>
+        <button onclick="scrollToElement('formSubmit')">Contact us</button>
+        <button id="shop-button" onclick="window.open('cart/index.html')">Shop</button>
+        <button id="shop-button2" onclick="window.open('blog/rust.html')">Blog</button>
       </div>
     </div>
   </section>
@@ -104,7 +94,7 @@
     </figure>
     <div class="item-parallax-content flex-container">
       <div class="centered-content">
-        <h1 class="head-large head-centered">Resort<br/>Maintenance</h1>
+        <h1 class="head-large head-centered">Maintenance</h1>
       </div>
     </div>
   </section>
@@ -150,7 +140,7 @@
       <div class="landing-content centered-content">
 <h1 class="head-large">Contact</h1>
 
-<div class="container3s">
+<div id="formSubmit">
   <form action="mailto:brambletwist@gmail.com?subject=Brambletwist%20Maintenance%20Request" method="post" enctype="text/plain">
       <div class="form-group">
           <label for="name">Name:</label>
