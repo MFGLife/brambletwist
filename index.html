@@ -1,133 +1,173 @@
 <!DOCTYPE html>
 <html lang="en" >
-    <head>
-        <meta charset="UTF-8">
-        <title>BrambleTwist Resort Maintenance</title>
-        <meta name="description" content="BrambleTwist Resort Maintenance provides expert spa and resort maintenance services. Contact us for top-notch service and maintenance solutions.">
-        <meta name="keywords" content="BrambleTwist, Bramble, Twist, Spa, Resort, Maintenance">
-        <meta name="robots" content="index, follow">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-        <link rel="apple-touch-icon" sizes="180x180" href="pics/wm.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="pics/wm.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="pics/wm.png">
-        <link rel="mask-icon" href="pics/wm.png" color="#fff">
-        <link rel="shortcut icon" href="pics/wm.png">
-        <link rel="stylesheet" href="./style.css">
-      </head>
 
 
-
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Expert resort maintenance services in Branson, MO. Specializing in repair, remodel, drywall, and painting.">
+    <meta name="keywords" content="Resort Maintenance, Maintenance, Repair, Remodel, Drywall, Paint, Painting, Branson, MO, Branson West, Hollister, Missouri, Big Cedar">
+    <meta name="author" content="Bramble Twist">
+    <title>Bramble Twist | Resort Maintenance</title>
+    <meta property="og:title" content="Resort Maintenance in Branson, Missouri | Bramble Twist">
+    <meta property="og:description" content="Expert resort maintenance services in Branson, MO. Specializing in repair, remodel, drywall, and painting.">
+    <meta property="og:image" content="pics/logo.png">
+    <meta property="og:url" content="https://brambletwist.com">
+    <meta property="og:type" content="website">
+    <link rel="apple-touch-icon" sizes="180x180" href="pics/logo.png">
+    <link rel="icon" type="image/png" href="pics/logo.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="pics/logo.png" sizes="16x16">
+    <link rel="mask-icon" href="pics/logo.png" color="#fff">
+    <link rel="shortcut icon" href="pics/logo.png">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Inknut+Antiqua:600|Roboto|Roboto+Condensed:700'>
+    <link rel="stylesheet" href="./style.css">
+    </head>
+    
 
 <body>
+ 
+  <div class="search-container">
+    <button id="shop-button" onclick="window.open('cart/index.html')">Shop</button>
+  </div>
+ 
+ 
 
-<button style="position:absolute; z-index: 99999999999999999999999; top: 15px; left: 15px;" id="lField" onclick="runCommands()" class="btn">Show [commands]</button>
+  <div class="container2">
+    <div id="word-container2"></div>
+  </div>
+<div id="keyword-list"></div>
 
 
-  <section class="home">
-    <div style="color:white;" class="chat-window" id="chatWindow">
+  <main class="content js-content">
+  
+  <section class="block section-landing">
+    <figure class="item-parallax-media">
+      <img src="pics/snakeplant.jpg" alt="Snake Plant" />
+    </figure>
+    <div class="item-parallax-content flex-container">
+      <div class="landing-content centered-content">
+        <h1 class="head-large">Bramble Twist</h1>
+        <form action="/search" method="get">
+          <input type="text" id="search" name="q" placeholder="Search our blog...">
+        </form>
+      </div>
     </div>
-    <form>
-      <input style="color:white; font-size: 1.3em;" class="input" type="text" id="userInput" placeholder="Type here..." oninput="checkPasscode();" onkeydown="handleKeyPress(event)">
-        <button style="display:none;">submit</button>
-    </form>
-</section>
+  </section>
+  
+  <section class="block section-intro">
+
+    <div class="item-parallax-content flex-container img-grid">
+
+      <figure class="img-gridItem type-left">
+        <img src="pics/micheal.png" alt="Micheal Salmon" />
+        <figcaption class="img-caption">
+          <h2 class="head-small">Feed Soul</h2>
+          <p id="exploretext" class="copy copy-white">
             
+            <div style="color:white; z-index: 99999999999999999999999999999999999999999; overflow-y: auto;" class="chat-window" id="chatWindow">
+            </div>
+            <form>
+              <input style="color:black;" class="input" type="text" id="userInput" placeholder="Chat with Micheal AI..." oninput="checkPasscode();" onkeydown="handleKeyPress(event)">
+                <button style="display:none;">submit</button>
+            </form>
+          </p>
+        </figcaption>
+      </figure>
 
-<section class="home2">
+      <figure class="img-gridItem type-right">
+        <img src="pics/crycella.jpg" alt="Crycella Freitag" />
+        <figcaption class="img-caption">
+          <h2 class="head-small">Feed Mind</h2>
+          <p class="copy copy-white">
+            Crycella Freitag and Micheal Salmon joined forces to establish Brambletwist, a premier resort maintenance solution specializing in high-end finishes under tight deadlines.
+             With Crycella's extensive backend experience, transparency in invoicing and adherence to work scopes are guaranteed, ensuring prompt service delivery. 
+          </p>
+          <div style="font-size: 20px; color: white;" class="slider-container">
+            <label for="soil">Subscription</label>
+            <input type="range" id="soil" min="1" max="250" value="1" step="1" oninput="calculatePrice()">
+            <p><font id="gallons">1</font><font id="price">$3</font> /month</p>
+        </div>
+          <button class="shrunk-font" onclick="orderEmail()">Get a Quote</button>
+        </figcaption>
+      </figure>
 
-<div class="overlay">
 
-  <textarea class="json-editor" id="jsonEditor" style="margin: 25px; width: 65vw; height: 600px;" placeholder="Field Editor"></textarea>
-
-<button class="btn" onclick="exportData()">Download File</button>
-<br><br>
-<input type="file" id="baseDataSet" onchange="importBaseDataSet(event)">
+    </div>
 
 
 
-  <form id="inspectionForm" class="hidden" style="display: none;">
-      <div class="form-row">
-          <label for="location">Location:</label>
-          <input type="text" id="location" name="location" required>
+  </section>
+  
+  <section class="block section-part">
+    <figure class="item-parallax-media">
+      <img src="pics/bigcedar.jpg" alt="Big Cedar Lodge" />
+    </figure>
+    <div class="item-parallax-content flex-container">
+      <div class="centered-content">
+        <h1 class="head-large head-centered">Resort<br/>Maintenance</h1>
       </div>
+    </div>
+  </section>
+  
+  <section class="block">
+    <div class="item-parallax-content flex-container img-grid">
+      <figure class="img-gridItem type-right">
+        <img src="pics/inspection.webp" alt="inspection" />
+        <figcaption class="img-caption">
+              <h2 class="head-small">Inspections</h2>
+      
+     <p class="copy copy-white">
+      At Brambletwist, our approach combines meticulous inspections and streamlined work order management to ensure optimal maintenance solutions for high-end finishes under tight deadlines.
+             Our inspections involve a thorough one-hour process where every item in the room is documented in a detailed spreadsheet, coded by repair status, and accompanied by recommendations and photos.
+             This comprehensive triage system enables strategic maintenance planning, empowering decision-makers with critical insights.
+     </p>
+      
+        </figcaption>
+      </figure>
 
-      <div class="form-row">
-          <label for="roomNumber">Room Number:</label>
-          <input type="text" id="roomNumber" name="roomNumber" required>
+
+
+      <figure class="img-gridItem type-left">
+        <img src="pics/leak.png" alt="water leak" />
+        <figcaption class="img-caption">
+          <h2 class="head-small">Work Order</h2>
+          <p class="copy copy-white">
+             For work orders, priority placement ensures timely attention, while subscribers benefit from exclusive emergency maintenance assistance and free access to their room data.
+              Subscribers receive additional support through AI-guided instructions for each repair, enhancing efficiency and minimizing downtime.
+              At Brambletwist, we're committed to delivering exceptional service through proactive maintenance strategies tailored to meet the unique needs of each property.
+          </p>
+        </figcaption>
+      </figure>
+      
+    </div>
+  </section>
+  
+  <section class="block section-end">
+    <figure class="item-parallax-media">
+      <img src="pics/resort.jpg" alt="tablerock lake resort" />
+    </figure>
+    <div class="item-parallax-content flex-container">
+      <div class="landing-content centered-content">
+<h1 class="head-large">Contact</h1>
+
+<iframe id="auctionFrame" src="auction/1.html" style="border: none; position: relative; left: -150px; bottom: 50px; z-index: 9999999999999999999999999999999999;" width="500px" height="800px"></iframe>
+
       </div>
+    </div>
+  </section>
+  
+  <section class="custom-properties-ftw">
+    <p class="copy copy-white">Phone: 785.214.9030 | Brambletwist@gmail.com <br> 128 Fritts Way Branson West, MO 65737</p><hr>
+  </section>
+</main>
+<!-- partial -->
+  <script  src="./script.js"></script>
 
-      <div class="task">
-          <label for="wallsAndCeiling">Condition of walls and ceiling:</label>
-          <textarea id="wallsAndCeiling" name="wallsAndCeiling" required></textarea>
-          <div class="button-group">
-              <button type="button" onclick="fillInput('wallsAndCeiling', 'Green')">Green</button>
-              <button type="button" onclick="fillInput('wallsAndCeiling', 'Yellow')">Yellow</button>
-              <button type="button" onclick="fillInput('wallsAndCeiling', 'Red')">Red</button>
-          </div>
-      </div>
-
-      <div class="task">
-          <label for="plumbing">Condition of plumbing:</label>
-          <textarea id="plumbing" name="plumbing" required></textarea>
-          <div class="button-group">
-              <button type="button" onclick="fillInput('plumbing', 'Green')">Green</button>
-              <button type="button" onclick="fillInput('plumbing', 'Yellow')">Yellow</button>
-              <button type="button" onclick="fillInput('plumbing', 'Red')">Red</button>
-          </div>
-      </div>
-
-      <div class="task">
-          <label for="appliances">Condition of appliances:</label>
-          <textarea id="appliances" name="appliances" required></textarea>
-          <div class="button-group">
-              <button type="button" onclick="fillInput('appliances', 'Green')">Green</button>
-              <button type="button" onclick="fillInput('appliances', 'Yellow')">Yellow</button>
-              <button type="button" onclick="fillInput('appliances', 'Red')">Red</button>
-          </div>
-      </div>
-
-      <div class="task">
-          <label for="flooring">Condition of flooring:</label>
-          <textarea id="flooring" name="flooring" required></textarea>
-          <div class="button-group">
-              <button type="button" onclick="fillInput('flooring', 'Green')">Green</button>
-              <button type="button" onclick="fillInput('flooring', 'Yellow')">Yellow</button>
-              <button type="button" onclick="fillInput('flooring', 'Red')">Red</button>
-          </div>
-      </div>
-
-      <div class="task">
-          <label for="urgency">Urgency (Green, Yellow, Black, Red):</label>
-          <input type="text" id="urgency" name="urgency" required>
-          <div class="button-group">
-              <button type="button" onclick="fillInput('urgency', 'Green')">Green</button>
-              <button type="button" onclick="fillInput('urgency', 'Yellow')">Yellow</button>
-              <button type="button" onclick="fillInput('urgency', 'Black')">Black</button>
-              <button type="button" onclick="fillInput('urgency', 'Red')">Red</button>
-          </div>
-      </div>
-
-      <button type="submit">Submit Inspection</button>
-  </form>
-
-
-
-</div></section>
-
-  </body>
-
-
-<script src="./chatbot2.js"></script>
-
-<script src="./bud/basedata.js"></script>
-<script src="./bud/collective.js"></script>
-<script src="./bud/data/plants.js"></script>
-
+  <script  src="./chatbot2.js"></script>
+  <script src="./basedata.js"></script>
+<script src="./collective.js"></script>
 <script src="./api.js"></script>
-<script src="./inspection.js"></script>
+
 
 </body>
 </html>

@@ -118,8 +118,7 @@ fetchWeather(function(weatherData) {
                             Chance of precipitation within 24hrs is ${precipitationChance * 100}%. 
                             ${outfitRecommendation} Set your thermostat to ${thermostatSetting}°F to stay comfortable.`;
 
-    const finalMessage = `
-        <span class="gradient-text">Micheal</span>: ${greeting} and welcome to BrambleTwist.com! ${introduction}
+    const finalMessage = `${greeting} and welcome to Brambletwist! ${introduction}
         ${deviceMessages[deviceType]} ${visitMessages[Math.min(visitCount - 1, 2)]} ${timeMessage} ${weatherMessage}
     `;
 
