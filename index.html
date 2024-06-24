@@ -37,7 +37,7 @@
     <div class="item-parallax-content flex-container">
       <div class="landing-content centered-content">
         <h1 class="head-large">Bramble Twist</h1>
-        <button id="contactUs">Contact us</button>
+        <button id="contactUs">Maintenance</button>
         <button id="shop-button">Shop</button>
         <button id="shop-button2">Blog</button>
 
@@ -100,7 +100,41 @@
     </figure>
     <div class="item-parallax-content flex-container">
       <div class="centered-content">
-        <h1 class="head-large head-centered">Maintenance</h1>
+        
+<div id="formSubmit">
+  <form id="maintenanceRequestForm" method="post" enctype="text/plain">
+    <h2>Maintenance Request</h2><br><br>
+      <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+          <label for="company">Company:</label>
+          <input type="text" id="company" name="company">
+      </div>
+      <div class="form-group">
+          <label for="email">Contact Email:</label>
+          <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+          <label for="phone">Contact Phone Number:</label>
+          <input type="tel" id="phone" name="phone">
+      </div>
+      <div class="form-group">
+          <label for="issue">Issue with Property:</label>
+          <textarea id="issue" name="issue" required></textarea>
+      </div>
+      <div class="form-group checkbox-group">
+          <div class="form-group checkbox-group">
+              <label for="immediate"> Immediate attention is required</label>
+              <input type="checkbox" id="immediate" name="timeframe" value="immediate">
+          </div>            
+      </div>
+      <div class="form-group">
+          <button type="submit">Submit</button>
+      </div>
+  </form>
+</div>
       </div>
     </div>
   </section>
@@ -139,48 +173,29 @@
   </section>
   
   <section class="block section-end">
+
+    <h1 class="head-large">Our Process</h1>
+
+
     <figure style="background-color:black;" class="item-parallax-media">
-      <img src="pics/resort.jpg" style="opacity: .5;" alt="tablerock lake resort" />
+      <img src="pics/sheet.png" style="opacity: .125;" alt="tablerock lake resort" />
     </figure>
     <div class="item-parallax-content flex-container">
-      <div class="landing-content centered-content">
-<h1 class="head-large">Contact</h1>
 
-<div id="formSubmit">
-  <form id="maintenanceRequestForm" method="post" enctype="text/plain">
-      <div class="form-group">
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required>
-      </div>
-      <div class="form-group">
-          <label for="company">Company:</label>
-          <input type="text" id="company" name="company">
-      </div>
-      <div class="form-group">
-          <label for="email">Contact Email:</label>
-          <input type="email" id="email" name="email" required>
-      </div>
-      <div class="form-group">
-          <label for="phone">Contact Phone Number:</label>
-          <input type="tel" id="phone" name="phone">
-      </div>
-      <div class="form-group">
-          <label for="issue">Issue with Property:</label>
-          <textarea id="issue" name="issue" required></textarea>
-      </div>
-      <div class="form-group checkbox-group">
-          <div class="form-group checkbox-group">
-              <label for="immediate"> Immediate attention is required</label>
-              <input type="checkbox" id="immediate" name="timeframe" value="immediate">
-          </div>            
-      </div>
-      <div class="form-group">
-          <button type="submit">Submit</button>
-      </div>
-  </form>
-</div>
 
-      </div>
+      <div id="ourProcess" class="landing-content centered-content">
+        <img id="processImage" src="pics/4a.png" style="opacity: .4;" alt="Pink Polo" />
+        <figcaption class="img-caption">
+            <h2 class="head-small">#PinkPolo</h2>
+            <p id="processInfo" class="copy copy-white">
+              Discover how Bramble Twist LLC masters resort maintenance with meticulous craftsmanship and strategic planning. Dive into our journey of excellence to see how we elevate guest experiences through superior service and meticulous attention to detail. Click to uncover our commitment to perfection.
+            </p>
+            <button onclick="changeInfo()">Learn More</button>
+        </figcaption>
+    </div>
+    
+
+
     </div>
   </section>
   

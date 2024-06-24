@@ -169,3 +169,37 @@ function openWindowSafely(url) {
       console.error('Invalid URL:', url);
   }
 }
+
+
+let currentIndex = 0;
+
+function changeInfo() {
+  const infoTexts = [
+      "With a legacy rooted in high-end, traditional American construction, Bramble Twist LLC has distinguished itself as a premier player in resort maintenance. Our journey began with a commitment to craftsmanship and attention to detail, principles that continue to define our approach today.",
+      "Partnering with esteemed brands like Bass Pro, we've set new benchmarks in resort maintenance perfection. This collaboration has not only enriched our experience but also reinforced our dedication to delivering unparalleled service and quality.",
+      "Every project starts with meticulous inspections, ensuring that we capture the essence of each property. These assessments form the bedrock for crafting customized maintenance plans tailored to optimize room rental triage and enhance guest experiences.",
+      "Our in-house technicians embody efficiency and expertise, swiftly executing maintenance tasks while adhering to the highest resort standards. Their proactive approach ensures minimal disruption to guests, maintaining cleanliness and comfort throughout the process.",
+      "At Bramble Twist LLC, we uphold a steadfast commitment to best resort practices. From initial inspections to final touches, every step is meticulously orchestrated to uphold our reputation for excellence. Our dedication extends beyond mere maintenance; it's a promise of exceptional service tailored to meet the unique needs of each property and its guests."
+  ];
+
+  const imageSources = [
+      "pics/1a.png",
+      "pics/2a.png",
+      "pics/3a.png",
+      "pics/4a.png",
+      "pics/5a.png"
+  ];
+
+  document.getElementById('processInfo').textContent = infoTexts[currentIndex];
+
+    // Update the image source
+    document.getElementById('processImage').src = imageSources[currentIndex];
+
+    // Increment the currentIndex
+    currentIndex++;
+
+    // If currentIndex exceeds the length of the arrays, reset to 0 (start over)
+    if (currentIndex >= infoTexts.length) {
+        currentIndex = 0;
+    }
+}
