@@ -37,9 +37,10 @@
     <div class="item-parallax-content flex-container">
       <div class="landing-content centered-content">
         <h1 class="head-large">Bramble Twist</h1>
-        <button onclick="scrollToElement('formSubmit')">Contact us</button>
-        <button id="shop-button" onclick="window.open('cart/index.html')">Shop</button>
-        <button id="shop-button2" onclick="window.open('blog/rust.html')">Blog</button>
+        <button id="contactUs">Contact us</button>
+        <button id="shop-button">Shop</button>
+        <button id="shop-button2">Blog</button>
+
       </div>
     </div>
   </section>
@@ -56,10 +57,13 @@
             
             <div style="color:white; z-index: 99999999999999999999999999999999999999999; overflow-y: auto;" class="chat-window" id="chatWindow">
             </div>
+            
             <form>
-              <input style="color:black;" class="input" type="text" id="userInput" placeholder="Chat with Micheal AI..." oninput="checkPasscode();" onkeydown="handleKeyPress(event)">
-                <button style="display:none;">submit</button>
-            </form>
+              <input style="color:black;" class="input" type="text" id="userInput" placeholder="Chat with Micheal AI...">
+              <button style="display:none;">submit</button>
+          </form>
+          
+
           </p>
         </figcaption>
       </figure>
@@ -74,11 +78,13 @@
           </p>
           <div style="font-size: 20px; color: white;" class="slider-container">
             <label for="soil">Subscription</label>
-            <input type="range" id="soil" min="1" max="250" value="1" step="1" oninput="calculatePrice()">
+            <input type="range" id="soil" min="1" max="250" value="1" step="1">
             <p><font id="gallons">1</font><font id="price">$3</font></p>
         </div>
-          <button class="shrunk-font" onclick="orderEmail()">Get a Quote</button>
-        </figcaption>
+
+        <button id="getQuote" class="shrunk-font">Get a Quote</button>
+
+      </figcaption>
       </figure>
 
 
@@ -140,6 +146,39 @@
       <div class="landing-content centered-content">
 <h1 class="head-large">Contact</h1>
 
+<div id="formSubmit">
+  <form id="maintenanceRequestForm" method="post" enctype="text/plain">
+      <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+          <label for="company">Company:</label>
+          <input type="text" id="company" name="company">
+      </div>
+      <div class="form-group">
+          <label for="email">Contact Email:</label>
+          <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+          <label for="phone">Contact Phone Number:</label>
+          <input type="tel" id="phone" name="phone">
+      </div>
+      <div class="form-group">
+          <label for="issue">Issue with Property:</label>
+          <textarea id="issue" name="issue" required></textarea>
+      </div>
+      <div class="form-group checkbox-group">
+          <div class="form-group checkbox-group">
+              <label for="immediate"> Immediate attention is required</label>
+              <input type="checkbox" id="immediate" name="timeframe" value="immediate">
+          </div>            
+      </div>
+      <div class="form-group">
+          <button type="submit">Submit</button>
+      </div>
+  </form>
+</div>
 
       </div>
     </div>

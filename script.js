@@ -100,3 +100,72 @@ function orderEmail() {
   var mailtoLink = 'mailto:brambletwist@gmail.com?subject=' + subject + '&body=' + body;
   window.location.href = mailtoLink;
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+
+  const form = document.getElementById('maintenanceRequestForm');
+
+  form.addEventListener('submit', function (event) {
+      event.preventDefault(); // Prevent the default form submission
+
+      const name = document.getElementById('name').value;
+      const company = document.getElementById('company').value;
+      const email = document.getElementById('email').value;
+      const phone = document.getElementById('phone').value;
+      const issue = document.getElementById('issue').value;
+      const immediate = document.getElementById('immediate').checked ? 'Immediate attention is required' : '';
+
+      const subject = encodeURIComponent('Brambletwist Maintenance Request');
+      let body = `Name: ${encodeURIComponent(name)}\n`;
+      body += `Company: ${encodeURIComponent(company)}\n`;
+      body += `Contact Email: ${encodeURIComponent(email)}\n`;
+      body += `Contact Phone Number: ${encodeURIComponent(phone)}\n`;
+      body += `Issue with Property: ${encodeURIComponent(issue)}\n`;
+      body += `${immediate}`;
+
+      const mailtoLink = `mailto:brambletwist@gmail.com?subject=${subject}&body=${body}`;
+
+      window.location.href = mailtoLink;
+  });
+
+  document.getElementById('shop-button').addEventListener('click', function() {
+      openWindowSafely('cart/index.html');
+  });
+
+  document.getElementById('shop-button2').addEventListener('click', function() {
+      openWindowSafely('blog/rust.html');
+  });
+
+  document.getElementById('getQuote').addEventListener('click', function() {
+    orderEmail();
+});
+
+  document.getElementById('contactUs').addEventListener('click', function() {
+    scrollToElement('formSubmit');
+});
+
+  document.getElementById('soil').addEventListener('input', function() {
+  calculatePrice();
+});
+
+  document.getElementById('userInput').addEventListener('input', function() {
+  checkPasscode();
+});
+
+document.getElementById('userInput').addEventListener('keydown', function(event) {
+  if (event.key === 'Enter') { // Check if Enter key is pressed
+      event.preventDefault(); // Prevent default behavior (e.g., form submission)
+      sendMessage();
+  }
+});
+
+});
+
+function openWindowSafely(url) {
+  // Basic URL validation to ensure it's a relative path
+  if (url && !url.includes('://') && (url.endsWith('.html') || url.endsWith('/'))) {
+      window.open(url);
+  } else {
+      console.error('Invalid URL:', url);
+  }
+}
